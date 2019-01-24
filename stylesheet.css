@@ -1,0 +1,106 @@
+body{
+	font-family: Arial, sans-serif, serif;
+	padding: 0;
+	margin: 0;
+}
+
+header{
+	font-size:50px;
+	text-align: center;
+}
+
+nav{
+	background: #E9F346;
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 70%;
+	padding: 10px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+a[href="project-list.html"] {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	color: black;
+	background: orange;
+	padding: 2px;
+	border: 3px solid #E67405;
+	border-radius: 10px;
+	margin-right: 60px;
+}
+
+a[href="https://www.instagram.com/lets.goanywhere"] {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	color: #F8D603;
+	background:#F81B00 ;
+	padding: 2px;
+	border: 3px solid #8D4AC2;
+	border-radius: 10px;
+}
+
+a[href="index.html"]{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 30px;
+	padding: 0 20px 3px;
+	color: #000000;
+	background: lime;
+	border: 3px solid #8D4AC2;
+	border-radius: 10px;
+}
+
+section{
+	text-align: center;
+
+}
+
+h2{
+	text-transform: uppercase;
+	font-size: 30px;
+}
+img {
+	width: 20%;
+	height: 20%;
+}
+
+ h3, footer, article {
+ 	text-align: center;
+ }
+
+ article {
+ 	width: 50%;
+ 	margin: 0 auto;
+ }
+
+ul {
+	list-style: none;
+}
+ aside {
+ 	text-align: center;
+}
+
+li a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: purple;
+}
+
+footer {
+	background: lightgrey;
+	font-size: 14px;
+	font-weight: bold;
+	height: 40px;
+}
+
+.project-img{
+	height: 50px;
+	width: 50px;
+}
+
