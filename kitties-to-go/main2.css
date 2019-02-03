@@ -75,10 +75,24 @@ article {
 }
 
 aside {
+	background: #EEDDE6;
+	text-align: center;
 	margin-left: 50px;
 	width: 320px;
 	display: inline-block;
 	margin-top: 0;
+	border: 5px dashed #D2A6BC;
+	padding: 20px;
+}
+
+aside h2 {
+	font-size: 30px;
+	margin: 0;
+	padding: 0;
+}
+
+.cat-week {
+	margin: 15px 0;
 }
 
 h3 {
