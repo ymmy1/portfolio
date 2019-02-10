@@ -1,56 +1,61 @@
 body{
+
 	font-family: Arial, sans-serif, serif;
 	padding: 0;
 	margin: 0;
 }
 
 header{
-	font-size:50px;
-	text-align: center;
+	background: url(../img/bg-main.jpg) no-repeat center top/ cover;
+	height: 40vh;
+	width: 100%;
+}
+p{
+	font-family: 'Nixie One', cursive;
+}
+
+h1{
+	font-family: 'Fahkwang', sans-serif;
+	font-size: 60px;
+	padding: 130px 100px;
+	margin: 0;
+	color: white;
 }
 
 nav{
-	background: #E9F346;
-	border: 1px solid black;
+	background: linear-gradient(to right, #DBDBDB, #938E90);
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
 	border-radius: 5px;
-	width: 70%;
-	padding: 10px;
-	margin: 0 auto;
-	text-align: center;
+	width: auto;
+	padding: 20px;
+	display: flex;
+	justify-content: flex-end;
 }
 
-a[href="project-list.html"] {
+a[href="project-list.html"],
+a[href="https://www.instagram.com/lets.goanywhere"],
+a[href="index.html"]
+{
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 20px;
 	color: black;
-	background: orange;
-	padding: 2px;
-	border: 3px solid #E67405;
-	border-radius: 10px;
-	margin-right: 60px;
+	margin-left: 60px;
+	font-style: italic;
+	padding: 5px;
 }
 
-a[href="https://www.instagram.com/lets.goanywhere"] {
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 20px;
-	color: #F8D603;
-	background:#F81B00 ;
-	padding: 2px;
-	border: 3px solid #8D4AC2;
-	border-radius: 10px;
-}
 
-a[href="index.html"]{
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 30px;
-	padding: 0 20px 3px;
-	color: #000000;
-	background: lime;
-	border: 3px solid #8D4AC2;
+a[href="project-list.html"]:hover,
+a[href="https://www.instagram.com/lets.goanywhere"]:hover,
+a[href="index.html"]:hover{
+	padding: 4px;
+	border: 1px solid red;
+	border-radius: 5px;
+	color: red;
 	border-radius: 10px;
+	transition: 0.5s ease;
 }
 
 section{
@@ -88,19 +93,42 @@ li a {
 	text-decoration: none;
 }
 
-a:hover {
-	color: purple;
-}
 
 footer {
-	background: lightgrey;
+	margin-top: 80px;
+	background: black;
+	color: white;
 	font-size: 14px;
 	font-weight: bold;
-	height: 40px;
+	height:50px;
 }
 
+
+.projects{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: lightgrey;
+	border: 3px solid black;
+	border-radius: 100px;
+	padding: 20px;
+	width: 90%;
+	margin: 0 auto;
+
+}
 .project-img{
-	height: 50px;
-	width: 50px;
+	height: 100px;
+	width: 100px;
 }
 
+.home-aside i{
+	margin-right: 10px;
+}
+
+.project-aside i {
+	font-size: 40px;
+}
+.project-aside li, .home-aside li {
+	display: inline-block;
+	margin-right: 20px;
+}
