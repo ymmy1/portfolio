@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Fahkwang|Nixie+One');
+
 body{
 
 	font-family: Arial, sans-serif, serif;
@@ -10,6 +12,12 @@ header{
 	height: 40vh;
 	width: 100%;
 }
+
+p::first-letter { 
+  font-size: 200%;
+  color: #8A2BE2;
+}
+
 p{
 	font-family: 'Nixie One', cursive;
 }
@@ -111,7 +119,7 @@ footer {
 	background: lightgrey;
 	border: 3px solid black;
 	border-radius: 100px;
-	padding: 20px;
+	padding: 10px;
 	width: 90%;
 	margin: 0 auto;
 
@@ -119,10 +127,24 @@ footer {
 .project-img{
 	height: 100px;
 	width: 100px;
+	margin: 10px;
+	border: 0px;
+	border-radius: 50%;
 }
 
 .home-aside i{
 	margin-right: 10px;
+}
+
+.home-aside ul li:nth-child(1) i{
+	color: pink;
+}
+
+.home-aside ul li:nth-child(2) i{
+	color: darkblue;
+}
+.home-aside ul li:nth-child(3) i{
+	color: lightblue;
 }
 
 .project-aside i {
@@ -131,4 +153,33 @@ footer {
 .project-aside li, .home-aside li {
 	display: inline-block;
 	margin-right: 20px;
+}
+
+.projects img:hover {
+	box-sizing: border-box;
+	transition: 0.3s ease;
+	border: 3px solid red;
+	border-radius: 50%;
+	transform: scale(1.2);
+}
+
+.project-aside ul li:nth-child(1) i{
+	color: crimson;
+}
+
+.project-aside ul li:nth-child(2) i{
+	color: midnightblue;
+}
+.project-aside ul li:nth-child(3) i{
+	color: saddlebrown;
+}
+
+
+h4 {
+	text-align: center;
+	padding: 0;
+	margin: 70px 0 10px;
+	font-style: italic;
+	font-weight: 600;
+	font-size: 20px;
 }
