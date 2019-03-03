@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles/main.css">	
 	<title>Different World</title>
 </head>
 <body>
-	<header>
-		<span><a href="index.html">Different World</a></span>
+<header>
+		<div class="container">
+		<div class="menu"><span><a href="index.html" class="logo">Different World</a></span>
 		<nav>
 			<ul>
 				<li><a href="menu.html">Menu</a></li>
@@ -14,35 +16,59 @@
 				<li><a href="#">About Us</a></li>
 			</ul>
 		</nav>
-		<h1>Swap you car to electric one</h1>
-		<p>Clean the air you breath</p>
-		<a href="#">Find Electric Car</a>
-		<a href="#"> Junk your old one</a>
-		<p>Have a 10% discount for bringing a friend</p>
-	</header>
-	<section>
-		<h2>Menu</h2>
-		<div class="menu">
-			<a href="#"><img src="#" alt="N1"></a>
-			<p>Differences between Electric and Gasoline cars</p>
-			<a href="#"><img src="#" alt="N2"></a>
-			<p>Electric car comparisment</p>
-			<a href="#"><img src="#" alt="N3"></a>
-			<p>Human Activities & Carbon</p>
-			<a href="#"><img src="#" alt="N4"></a>
-			<p>Average Earth's Temperature 1951-2019</p>
-			<a href="#"><img src="#" alt="N5"></a>
-			<p>Buy Other</p>
-			<a href="#"><img src="#" alt="N6"></a>
-			<p>Support</p>
-
 		</div>
+		<section class="main"><h1>Swap your car to electric one</h1>
+		<p>Clean the air you breath.</p>
+		<div class="buttons">
+			<a href="#" class="find button">Find Electric Car</a>
+			<a href="#" class="junk button"> Junk your old one</a>
+		</div>
+		<p class="disc">Have a 10% discount for bringing a friend</p>
+		</section>
+		</div>
+	</header>
+	<section class="menu-page">
+		<h2>Menu</h2>
+		<div class="menu2">
+			<div class="grid-item-1">
+				<a href="#"><img src="img/icon-1.png" alt="N2"></a>
+				<p>Electric car comparisment</p>
+			</div>
+			<div class="grid-item-2">
+				<a href="#"><img src="img/icon-2.png" alt="N1"></a>
+				<p>Differences between Electric and Gasoline cars</p>
+			</div>
+			<div class="grid-item-3">
+				<a href="#"><img src="img/icon-3.png" alt="N3"></a>
+				<p>Human Activities & Carbon</p>
+			</div>
+			<div class="grid-item-4">
+				<a href="#"><img src="img/icon-4.png" alt="N5"></a>
+				<p>Buy Other</p>
+			</div>
+			<div class="grid-item-5">
+				<a href="#"><img src="img/icon-5.png" alt="N4"></a>
+				<p>Average Earth's Temperature 1951-2019</p>
+			</div>
+			<div class="grid-item-6">
+				<a href="#"><img src="img/icon-6.png" alt="N6"></a>
+				<p>Support</p>
+			</div>
+		</div>
+		<section class="menu3">
+			<h2>How Hot?</h2>
+			<video width="250" height="400" controls poster="img/video-1.jpg">
+				<source src="video/temp-1.mp4" type="video/mp4">
+			</video>
+		</section>
 	</section>
 	<footer>
 		<h2>Sponsores</h2>
-		<img src="#" alt="1">
-		<img src="#" alt="2">
-		<img src="#" alt="3">
+		<div class="sponsors">
+			<img src="img/sponsors.png" alt="1">
+			<img src="img/sponsors.png" alt="2">
+			<img src="img/sponsors.png" alt="3">
+		</div>
 	</footer>
 </body>
 </html>
