@@ -13,6 +13,26 @@ header{
 	width: 100%;
 }
 
+section {
+	background: url(http://cdn.magdeleine.co/wp-content/uploads/2014/05/3jPYgeVCTWCMqjtb7Dqi_IMG_8251-1400x933.jpg) no-repeat center top / cover;
+	height: 700px;
+	margin: 0;
+}
+
+article {
+	background-color: rgba(255, 255, 255, 0.3);
+	width: 500px;
+	border: 5px rgba(255, 255, 255, 0.5) solid;
+	border-radius: 50px;
+}
+.article {
+	padding-top: 100px;
+}
+
+.article h2 {
+	margin-bottom: 25px;
+	padding: 10px;
+}
 p::first-letter { 
   font-size: 200%;
   color: #8A2BE2;
@@ -43,13 +63,14 @@ nav{
 
 a[href="project-list.html"],
 a[href="https://www.instagram.com/lets.goanywhere"],
-a[href="index.html"]
+a[href="index.html"],
+a[href="registration.html"]
 {
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 20px;
 	color: black;
-	margin-left: 60px;
+	margin-left: 40px;
 	font-style: italic;
 	padding: 5px;
 }
@@ -57,7 +78,8 @@ a[href="index.html"]
 
 a[href="project-list.html"]:hover,
 a[href="https://www.instagram.com/lets.goanywhere"]:hover,
-a[href="index.html"]:hover{
+a[href="index.html"]:hover,
+a[href="registration.html"]:hover{
 	padding: 4px;
 	border: 1px solid red;
 	border-radius: 5px;
@@ -103,7 +125,6 @@ li a {
 
 
 footer {
-	margin-top: 80px;
 	background: black;
 	color: white;
 	font-size: 14px;
@@ -183,3 +204,249 @@ h4 {
 	font-weight: 600;
 	font-size: 20px;
 }
+
+/* Registration style */ 
+
+input{
+	display: block;
+	margin: 10px auto;
+}
+
+h2{
+	margin: 0;
+	padding-top: 50px;
+}
+.registration-page {
+	background: url(http://cdn.magdeleine.co/wp-content/uploads/2014/05/3jPYgeVCTWCMqjtb7Dqi_IMG_8251-1400x933.jpg) no-repeat center top / cover;
+	height: 700px;
+	margin: 0;
+}
+
+.registration-page form {
+	margin: 20px auto;
+	background-color: rgba(255, 255, 255, 0.3);
+	width: 500px;
+	border: 5px rgba(255, 255, 255, 0.5) solid;
+	border-radius: 50px;
+	padding: 20px;
+}
+
+.registration-page form label,
+.registration-page form select option,
+select  {
+	font-weight: bold;
+	color: #796aa2;
+}
+
+.registration-page form input,
+.registration-page form select {
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 2px rgba(255, 255, 255, 0.6) solid;
+	border-radius: 10px;
+	height: 20px;
+	padding:2px 0 2px 10px; 
+}
+.registration-page form select{
+	height: 25px;
+}
+
+.registration-page form input:focus {
+	background-color: rgba(255, 255, 255, 0.7);
+	outline: none;
+}
+
+select option {
+	background: rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.block {
+	display: block;
+	margin: 10px auto 0;
+}
+
+#button	{
+	padding: 20px;
+	font-weight: bold;
+	color: #796aa2;
+	font-size: 20px;
+
+}
+
+
+
+
+
+/* Copy - Paste, Have no idea what is going on below, just changed the size and color, somehow lol */
+
+.toggle{
+  --uiToggleSize: var(--toggleSize, 20px);
+  --uiToggleIndent: var(--toggleIndent, .4em);
+  --uiToggleBorderWidth: var(--toggleBorderWidth, 2px);
+  --uiToggleColor: var(--toggleColor, #000);
+  --uiToggleDisabledColor: var(--toggleDisabledColor, #868e96);
+  --uiToggleBgColor: var(--toggleBgColor, #fff);
+  --uiToggleArrowWidth: var(--toggleArrowWidth, 2px);
+  --uiToggleArrowColor: var(--toggleArrowColor, #fff);
+
+  display: inline-block;
+  position: relative;
+}
+
+.toggle__input{
+  position: absolute;
+  left: -99999px;
+}
+
+.toggle__label{
+  display: inline-flex;
+  cursor: pointer;
+  min-height: var(--uiToggleSize);
+  padding-left: calc(var(--uiToggleSize) + var(--uiToggleIndent));
+}
+
+.toggle__label:before, .toggle__label:after{
+  content: "";
+  box-sizing: border-box;  
+  width: 1em;
+  height: 1em;
+  font-size: var(--uiToggleSize);
+
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.toggle__label:before{
+  border: var(--uiToggleBorderWidth) solid var(--uiToggleColor);
+  z-index: 2;
+}
+
+.toggle__input:disabled ~ .toggle__label:before{
+  border-color: var(--uiToggleDisabledColor);
+}
+
+.toggle__input:focus ~ .toggle__label:before{
+  box-shadow: 0 0 0 2px var(--uiToggleBgColor), 0 0 0px 4px var(--uiToggleColor);
+}
+
+.toggle__input:not(:disabled):checked:focus ~ .toggle__label:after{
+  box-shadow: 0 0 0 2px var(--uiToggleBgColor), 0 0 0px 4px var(--uiToggleColor);
+}
+
+.toggle__input:not(:disabled) ~ .toggle__label:after{
+  background-color: var(--uiToggleColor);
+  opacity: 0;
+}
+
+.toggle__input:not(:disabled):checked ~ .toggle__label:after{
+  opacity: 1;
+}
+
+.toggle__text{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/*
+The arrow size and position depends from sizes of square because I needed an arrow correct positioning from the top left corner of the element toggle
+*/
+
+.toggle__text:before{
+  content: "";
+  box-sizing: border-box;
+  width: 0;
+  height: 0;
+  font-size: var(--uiToggleSize);
+
+  border-left-width: 0;
+  border-bottom-width: 0;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-color: var(--uiToggleArrowColor);
+
+  position: absolute;
+  top: .5428em;
+  left: .2em;
+  z-index: 3;
+
+  transform-origin: left top;
+  transform: rotate(-40deg) skew(10deg);
+}
+
+.toggle__input:not(:disabled):checked ~ .toggle__label .toggle__text:before{
+  width: .5em;
+  height: .25em;
+  border-left-width: var(--uiToggleArrowWidth);
+  border-bottom-width: var(--uiToggleArrowWidth);
+  will-change: width, height;
+  transition: width .1s ease-out .2s, height .2s ease-out;
+}
+
+/*
+=====
+LEVEL 2. PRESENTATION STYLES
+=====
+*/
+
+/* 
+The demo skin
+*/
+
+.toggle__label:before, .toggle__label:after{
+  border-radius: 2px;
+}
+
+/* 
+The animation of switching states
+*/
+
+.toggle__input:not(:disabled) ~ .toggle__label:before,
+.toggle__input:not(:disabled) ~ .toggle__label:after{
+  opacity: 1;
+  transform-origin: center center;
+  will-change: transform;
+  transition: transform .2s ease-out;
+}
+
+.toggle__input:not(:disabled) ~ .toggle__label:before{
+  transform: rotateY(0deg);
+  transition-delay: .2s;
+}
+
+.toggle__input:not(:disabled) ~ .toggle__label:after{
+  transform: rotateY(90deg);
+}
+
+.toggle__input:not(:disabled):checked ~ .toggle__label:before{
+  transform: rotateY(-90deg);
+  transition-delay: 0s;
+}
+
+.toggle__input:not(:disabled):checked ~ .toggle__label:after{
+  transform: rotateY(0deg);
+  transition-delay: .2s;
+}
+
+.toggle__text:before{
+  opacity: 0;
+}
+
+.toggle__input:not(:disabled):checked ~ .toggle__label .toggle__text:before{
+  opacity: 1;
+  transition: opacity .1s ease-out .3s, width .1s ease-out .5s, height .2s ease-out .3s;
+}
+
+/*
+=====
+LEVEL 3. SETTINGS
+=====
+*/
+
+.toggle{
+  --toggleColor: rgba(0, 0, 0, 0.2);
+  --toggleBgColor: rgba(0, 0, 0, 0.7);
+  --toggleSize: 30px;
+}
+
+/* Copy - Paste */
