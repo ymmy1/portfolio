@@ -133,6 +133,10 @@ h2{
 .menu-page {
 	background: #d1d7e1;
 }
+
+.menu-page p {
+	font-size: 1.2rem;
+}
 .menu2 {
 	display: grid;
 	grid-gap: 30px 10px;
@@ -179,4 +183,21 @@ h2{
 }
 .menu3 {
 	text-align: center;
+}
+
+/* Hidden buttons */
+.style-scope{    
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: -10000px;
+}
+.style-scope:focus {
+	top: 0;
 }
