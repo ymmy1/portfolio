@@ -1,0 +1,59 @@
+@media screen and (max-width: 1024px){
+
+	.side{
+		display: none;
+
+	}
+	.top {
+		display: block;
+		margin: 0;
+	}
+
+	li {
+		display: flex;
+		justify-content: center;
+		width: 100%; 
+		background-color: rgba(235,	193, 158, 0.7);
+	}
+
+	nav {
+		text-align: center;
+		width: 100%;
+	}
+
+	ul, li{
+		margin: 0;
+		padding: 0;
+	}
+	.top ul a {
+		font-size: 80px;
+		color: white;
+		opacity: 1.0;
+	}
+
+	.logo{
+		display: flex;
+		justify-content: center; 
+		font-size: 160px;
+		margin: 0;
+		padding: 0;
+	}
+
+button{
+	color:#b0967d;
+	font-size: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 34px 160px;
+	background: linear-gradient(to bottom, grey, black);
+	border: 4px grey solid;
+	border-radius: 80px;
+	cursor: pointer;
+	box-shadow: 0 50px 140px 0 rgba(0,0,0);
+}
+
+.btn {
+	margin-left: -315px;
+}
+
+}
