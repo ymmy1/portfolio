@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700');
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+}
+
+.container
+{
+    width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+
+    text-align: center;
+}
+.nav-bar-first
+{
+    display: flex;
+    height: 92px;
+
+    justify-content: space-between;
+}
+
+.main-menu,
+.logo
+{
+    margin: auto 0;
+}
+
+.main-bar-link,
+.second-bar-link,
+.third-bar-link
+{
+    font-size: 22px;
+    font-weight: bold;
+
+    margin-right: 50px;
+
+    text-decoration: none;
+
+    color: #777;
+}
+.main-bar-link:last-child,
+.second-bar-link:last-child,
+.third-bar-link:last-child
+{
+    margin-right: 0;
+}
+
+.main-bar-link:hover,
+.second-bar-link:hover,
+.third-bar-link:hover
+{
+    color: #000;
+}
+
+.main-bg
+{
+    height: 75vh;
+
+    background: url('img/bg-1.png') no-repeat center top / cover;
+}
+
+.main-bg h1
+{
+    margin: 0;
+    padding: 0;
+}
+
+.main-greeting
+{
+    width: 840px;
+    margin-left: 280px;
+    padding-top: 22%;
+}
+.main-heading
+{
+    font-size: 65px;
+    font-weight: 400;
+
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: white;
+    background-color: #000;
+}
+
+.main-text
+{
+    font-size: 20px;
+    font-weight: 400;
+
+    margin-top: 35px;
+
+    text-align: center;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+
+    color: #3a3a3a;
+}
+
+/* Second page styling */
+.second-menu
+{
+    margin: 50px auto 0;
+    padding: 20px 110px;
+
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+.second-bar-link
+{
+    margin-right: 0;
+}
+
+.second-bar-link-after
+{
+    padding: 0 20px;
+}
+.second-bar-link-after:after
+{
+    display: inline-block;
+
+    content: '/';
+    transform: scale(3);
+
+    color: #e1e1e1;
+}
+.second .container {
+	width: 1130px;
+}
+.collage {
+	margin-top: 150px;
+	display: flex;
+	justify-content: center;
+}
+
+.collage div img {
+	margin-bottom: 20px;
+}
+.load-more
+{
+    font-size: 13px;
+    font-weight: bold;
+
+    display: block;
+
+    margin: 30px auto;
+    padding: 10px 30px;
+
+    cursor: pointer;
+    text-transform: uppercase;
+
+    color: white;
+    border: none;
+    border-radius: 4px;
+    background-color: #959595;
+}
+
+/* Footer styling */
+
+footer
+{
+	background-color: #white;
+    margin: 0 auto;
+
+    text-align: center;
+
+    -webkit-box-shadow: 0 -5px 5px 0 rgba(242,242,242,1);
+       -moz-box-shadow: 0 -5px 5px 0 rgba(242,242,242,1);
+            box-shadow: 0 -5px 5px 0 rgba(242,242,242,1);
+}
+
+footer .logo
+{
+    margin-top: 80px;
+}
+.third-menu
+{
+    display: flex;
+
+    margin: 50px 0;
+    padding: 20px 110px;
+
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+
+    justify-content: center;
+}
+
+.footer-title
+{
+    font-size: 14px;
+    font-weight: bold;
+
+    padding-bottom: 50px;
+
+    text-transform: uppercase;
+
+    color: #9c9c9c;
+}
+
+.footer-title-bold
+{
+    color: black;
+}
