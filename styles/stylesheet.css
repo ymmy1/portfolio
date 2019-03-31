@@ -1,268 +1,349 @@
 @import url('https://fonts.googleapis.com/css?family=Fahkwang|Nixie+One');
 
-body{
+body
+{
+    font-family: Arial, sans-serif, serif;
 
-	font-family: Arial, sans-serif, serif;
-	padding: 0;
-	margin: 0;
-}
-
-header{
-	background: url(../img/bg-main.jpg) no-repeat center top/ cover;
-	height: 30vh;
-	width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-section {
-	background: url(http://cdn.magdeleine.co/wp-content/uploads/2014/05/3jPYgeVCTWCMqjtb7Dqi_IMG_8251-1400x933.jpg) no-repeat center top / cover;
-	height: 700px;
-	margin: 0;
-	text-align: center;
+header
+{
+    width: 100%;
+    height: 30vh;
+
+    background: url(../img/bg-main.jpg) no-repeat center top/ cover;
 }
 
-article {
-	background-color: rgba(255, 255, 255, 0.3);
-	width: 500px;
-	border: 5px rgba(255, 255, 255, 0.5) solid;
-	border-radius: 50px;
-	width: 50%;
- 	margin: 0 auto;
-}
-.article {
-	padding-top: 100px;
+section
+{
+    height: 700px;
+    margin: 0;
+
+    text-align: center;
+
+    background: url(http://cdn.magdeleine.co/wp-content/uploads/2014/05/3jPYgeVCTWCMqjtb7Dqi_IMG_8251-1400x933.jpg) no-repeat center top / cover;
 }
 
-.article h2 {
-	margin-bottom: 25px;
-	padding: 10px;
+article
+{
+    width: 500px;
+    width: 50%;
+    margin: 0 auto;
+
+    border: 5px rgba(255, 255, 255, .5) solid;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, .3);
 }
-p::first-letter { 
-  font-size: 200%;
-  color: #8A2BE2;
+.article
+{
+    padding-top: 100px;
 }
 
-p{
-	font-family: 'Nixie One', cursive;
+.article h2
+{
+    margin-bottom: 25px;
+    padding: 10px;
+}
+p::first-letter
+{
+    font-size: 200%;
+
+    color: #8a2be2;
 }
 
-h1{
-	font-family: 'Fahkwang', sans-serif;
-	font-size: 60px;
-	padding: 110px 100px;
-	margin: 0;
-	color: white;
+p
+{
+    font-family: 'Nixie One', cursive;
 }
 
-nav{
-	background: linear-gradient(to right, #DBDBDB, #938E90);
-	border-top: 2px solid black;
-	border-bottom: 2px solid black;
-	border-radius: 5px;
-	width: auto;
-	padding: 20px;
-	display: flex;
-	justify-content: flex-end;
+h1
+{
+    font-family: 'Fahkwang', sans-serif;
+    font-size: 60px;
+
+    margin: 0;
+    padding: 110px 100px;
+
+    color: white;
 }
 
-nav a{
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 20px;
-	color: black;
-	margin-left: 40px;
-	font-style: italic;
-	padding: 5px;
+nav
+{
+    display: flex;
+
+    width: auto;
+    padding: 20px;
+
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    background: linear-gradient(to right, #dbdbdb, #938e90);
+
+    justify-content: flex-end;
 }
 
+nav a
+{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
 
-nav a:hover{
-	padding: 4px;
-	border: 1px solid crimson;
-	border-radius: 5px;
-	color: crimson;
-	border-radius: 10px;
-	transition: 0.5s ease;
-}
+    margin-left: 40px;
+    padding: 5px;
 
-h2{
-	text-transform: uppercase;
-	font-size: 30px;
-	margin: 0;
-	padding-top: 50px;
-}
-img {
-	width: 20%;
-	height: 20%;
-}
+    text-decoration: none;
 
- h3, footer, article {
- 	text-align: center;
- }
-
-h4 {
-	text-align: center;
-	padding: 0;
-	margin: 70px 0 10px;
-	font-style: italic;
-	font-weight: 600;
-	font-size: 20px;
-}
-
- ul {
-	list-style: none;
-}
- aside {
- 	text-align: center;
-}
-
-li a {
-	color: black;
-	text-decoration: none;
+    color: black;
 }
 
 
-footer {
-	background: black;
-	color: white;
-	font-size: 14px;
-	font-weight: bold;
-	height:50px;
+nav a:hover
+{
+    padding: 4px;
+
+    transition: .5s ease;
+
+    color: crimson;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    border-radius: 10px;
+}
+
+h2
+{
+    font-size: 30px;
+
+    margin: 0;
+    padding-top: 50px;
+
+    text-transform: uppercase;
+}
+img
+{
+    width: 20%;
+    height: 20%;
+}
+
+h3,
+footer,
+article
+{
+    text-align: center;
+}
+
+h4
+{
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+
+    margin: 70px 0 10px;
+    padding: 0;
+
+    text-align: center;
+}
+
+ul
+{
+    list-style: none;
+}
+aside
+{
+    text-align: center;
+}
+
+li a
+{
+    text-decoration: none;
+
+    color: black;
 }
 
 
-.projects{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	background-color: rgba(255, 255, 255, 0.3);
-	border: 5px rgba(255, 255, 255, 0.5) solid;
-	border-radius: 100px;
-	padding: 10px;
-	width: 50%;
-	margin: 0 auto;
+footer
+{
+    font-size: 14px;
+    font-weight: bold;
 
-}
-.project-img{
-	height: 100px;
-	width: 100px;
-	margin: 10px;
-	border: 0px;
-	border-radius: 50%;
+    height: 50px;
+
+    color: white;
+    background: black;
 }
 
-.home-aside i{
-	margin-right: 10px;
+
+.projects
+{
+    display: flex;
+
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+
+    border: 5px rgba(255, 255, 255, .5) solid;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, .3);
+
+    justify-content: space-around;
+    align-items: center;
+}
+.project-img
+{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+
+    border: 0;
+    border-radius: 50%;
 }
 
-.home-aside ul li:nth-child(1) i{
-	color: pink;
+.home-aside i
+{
+    margin-right: 10px;
 }
 
-.home-aside ul li:nth-child(2) i{
-	color: darkblue;
-}
-.home-aside ul li:nth-child(3) i{
-	color: lightblue;
+.home-aside ul li:nth-child(1) i
+{
+    color: pink;
 }
 
-.project-aside i {
-	font-size: 40px;
+.home-aside ul li:nth-child(2) i
+{
+    color: darkblue;
 }
-.project-aside li, .home-aside li {
-	display: inline-block;
-	margin-right: 20px;
-}
-
-.projects img:hover {
-	box-sizing: border-box;
-	transition: 0.3s ease;
-	border: 3px solid crimson;
-	border-radius: 50%;
-	transform: scale(1.2);
+.home-aside ul li:nth-child(3) i
+{
+    color: lightblue;
 }
 
-.project-aside ul li:nth-child(1) i{
-	color: crimson;
+.project-aside i
+{
+    font-size: 40px;
+}
+.project-aside li,
+.home-aside li
+{
+    display: inline-block;
+
+    margin-right: 20px;
 }
 
-.project-aside ul li:nth-child(2) i{
-	color: midnightblue;
-}
-.project-aside ul li:nth-child(3) i{
-	color: saddlebrown;
-}
+.projects img:hover
+{
+    box-sizing: border-box;
 
-/* Registration style */ 
+    transition: .3s ease;
+    transform: scale(1.2);
 
-input{
-	display: block;
-	margin: 8px auto;
+    border: 3px solid crimson;
+    border-radius: 50%;
 }
 
-.registration-page {
-	background: url(http://cdn.magdeleine.co/wp-content/uploads/2014/05/3jPYgeVCTWCMqjtb7Dqi_IMG_8251-1400x933.jpg) no-repeat center top / cover;
-	height: 700px;
-	margin: 0;
+.project-aside ul li:nth-child(1) i
+{
+    color: crimson;
 }
 
-.registration-page form {
-	margin: 20px auto;
-	background-color: rgba(255, 255, 255, 0.3);
-	width: 500px;
-	border: 5px rgba(255, 255, 255, 0.5) solid;
-	border-radius: 50px;
-	padding: 20px;
+.project-aside ul li:nth-child(2) i
+{
+    color: midnightblue;
+}
+.project-aside ul li:nth-child(3) i
+{
+    color: saddlebrown;
+}
+
+/* Registration style */
+
+input
+{
+    display: block;
+
+    margin: 8px auto;
+}
+
+.registration-page
+{
+    height: 700px;
+    margin: 0;
+
+    background: url(http://cdn.magdeleine.co/wp-content/uploads/2014/05/3jPYgeVCTWCMqjtb7Dqi_IMG_8251-1400x933.jpg) no-repeat center top / cover;
+}
+
+.registration-page form
+{
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+
+    border: 5px rgba(255, 255, 255, .5) solid;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, .3);
 }
 
 .registration-page form label,
 .registration-page form select option,
-select  {
-	font-weight: bold;
-	color: #796aa2;
+select
+{
+    font-weight: bold;
+
+    color: #796aa2;
 }
 
 .registration-page form input,
-.registration-page form select {
-	background-color: rgba(255, 255, 255, 0.5);
-	border: 2px rgba(255, 255, 255, 0.6) solid;
-	border-radius: 10px;
-	padding: 3px 0 3px 10px; 
-}
-.registration-page form select{
-	height: 25px;
-}
+.registration-page form select
+{
+    padding: 3px 0 3px 10px;
 
-.registration-page form input:focus {
-	background-color: rgba(255, 255, 255, 0.7);
-	outline: none;
+    border: 2px rgba(255, 255, 255, .6) solid;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .5);
+}
+.registration-page form select
+{
+    height: 25px;
 }
 
-select option {
-	background: rgba(0, 0, 0, 0.1);
-	text-align: center;
+.registration-page form input:focus
+{
+    outline: none;
+    background-color: rgba(255, 255, 255, .7);
 }
 
-.block {
-	display: block;
-	margin: 10px auto 0;
+select option
+{
+    text-align: center;
+
+    background: rgba(0, 0, 0, .1);
 }
 
-#button	{
-	padding: 10px 50px;
-	font-weight: bold;
-	color: #796aa2;
-	font-size: 20px;
-	border-radius: 20px;
+.block
+{
+    display: block;
+
+    margin: 10px auto 0;
 }
 
-#button:hover	{
-	background: rgba(255, 255, 255, 0.7);
-	cursor: pointer;
-	transition: 0.4s ease;
+#button
+{
+    font-size: 20px;
+    font-weight: bold;
+
+    padding: 10px 50px;
+
+    color: #796aa2;
+    border-radius: 20px;
 }
 
+#button:hover
+{
+    cursor: pointer;
+    transition: .4s ease;
 
-
+    background: rgba(255, 255, 255, .7);
+}
 
 /* Copy - Paste, Have no idea what is going on below, just changed the size and color, somehow lol */
 

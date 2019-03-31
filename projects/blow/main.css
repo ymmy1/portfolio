@@ -1,110 +1,149 @@
-html{
-	font-family: Montserrat, arial, sans-serif;
+html
+{
+    font-family: Montserrat, arial, sans-serif;
 }
-body{
-	padding: 0;
-	margin: 0;
-}
-
-header{
-	background: url(img/bg-main.jpg) no-repeat center top / cover;
-	height: 100vh;
-	width: auto;
+body
+{
+    margin: 0;
+    padding: 0;
 }
 
-.logo {
-	text-decoration: none;
-	color: black;
-	display: inline-block;
-	font-weight: 900;
-	font-size: 40px;
+header
+{
+    width: auto;
+    height: 100vh;
+
+    background: url(img/bg-main.jpg) no-repeat center top / cover;
 }
 
-nav{
-	display: inline-block;
-}
-.top{
-	padding-top: 100px;
-	margin: 0 50px 0 220px;
-	display: flex;
-	justify-content: space-between;
+.logo
+{
+    font-size: 40px;
+    font-weight: 900;
 
-}
-li{
-	display: inline-block;
-	margin-left: 20px;
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: black;
 }
 
-nav a{
-	text-decoration: none;
-	color: black;
-	font-weight: 600;
-	font-size: 25px;
-	padding: 8px 20px;
-	border-radius: 30px;
+nav
+{
+    display: inline-block;
+}
+.top
+{
+    display: flex;
+
+    margin: 0 50px 0 220px;
+    padding-top: 100px;
+
+    justify-content: space-between;
+}
+li
+{
+    display: inline-block;
+
+    margin-left: 20px;
 }
 
-nav a:hover {
-	color: white;
-	background: black;
-	transition: 0.5s ease;
+nav a
+{
+    font-size: 25px;
+    font-weight: 600;
+
+    padding: 8px 20px;
+
+    text-decoration: none;
+
+    color: black;
+    border-radius: 30px;
 }
 
-button{
-	color:#b0967d;
-	font-size: 20px;
-	text-transform: uppercase;
-	text-align: center;
-	padding: 17px 80px;
-	background: linear-gradient(to bottom, grey, black);
-	border: 2px grey solid;
-	border-radius: 40px;
-	cursor: pointer;
-	box-shadow: 0 50px 140px 0 rgba(0,0,0);
+nav a:hover
+{
+    transition: .5s ease;
+
+    color: white;
+    background: black;
 }
 
-button:hover{
-	background: #000;
+button
+{
+    font-size: 20px;
+
+    padding: 17px 80px;
+
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #b0967d;
+    border: 2px grey solid;
+    border-radius: 40px;
+    background: linear-gradient(to bottom, grey, black);
+    box-shadow: 0 50px 140px 0 rgba(0,0,0);
 }
 
-button:focus {
-	outline:0;
+button:hover
+{
+    background: #000;
 }
 
-button:active {
-	border: 2px lightgrey solid;
-}
-.btn {
-	position: absolute;
-	bottom: 90px;
-	left: 50%;
-	margin-left: -100px;
-}
-.side-text {
-	margin: 250px 0 0 -200px;
-	width: 500px;
-	transform: rotate(-90deg);
-}
-.first-part, .second-part {
-	display: inline-block;
-	padding: 0;
-	margin: 0;
-	font-size: 22px;
-	text-transform: uppercase;
+button:focus
+{
+    outline: 0;
 }
 
-.first-part {
-	color: black;
-	font-weight: bold;
+button:active
+{
+    border: 2px lightgrey solid;
 }
-.second-part {
-	color:#b2b2b2;
+.btn
+{
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+
+    margin-left: -100px;
+}
+.side-text
+{
+    width: 500px;
+    margin: 250px 0 0 -200px;
+
+    transform: rotate(-90deg);
+}
+.first-part,
+.second-part
+{
+    font-size: 22px;
+
+    display: inline-block;
+
+    margin: 0;
+    padding: 0;
+
+    text-transform: uppercase;
+}
+
+.first-part
+{
+    font-weight: bold;
+
+    color: black;
+}
+.second-part
+{
+    color: #b2b2b2;
 }
 
 
 
-img[src="img/icon1.png"]{
-	position: absolute;
-	left: 30px;
-	bottom: 20px;
+img[src='img/icon1.png']
+{
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
 }
