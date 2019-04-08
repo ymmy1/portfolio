@@ -150,6 +150,11 @@ body
 {
     margin-bottom: 20px;
 }
+
+.collage img:hover {
+    transform: scale(1.3);
+    transition: ease 0.5s;
+}
 .load-more
 {
     font-size: 13px;
