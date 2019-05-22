@@ -10,21 +10,87 @@
 		<link rel="stylesheet" href="styles/stylesheet.css">
 	</head>
 	<body>
-	<header><h1>Welcome.</h1></header>
-	<nav>
-		<a href="index.html">Home</a>
-		<a href="registration.html">Register</a>
-		<a href="project-list.html">List of projects that I have done</a>
-		<a href="https://www.instagram.com/lets.goanywhere">About me</a>
-	</nav>
-	<section> <div class="article"><h2>Nice cute white snake is gone now</h2>
-		<article><h3>Lorem Ipsum is simply dummy </h3><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of tasdasdasdasdasdasype and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></article>
-		<aside class="home-aside"><ul>
-			<li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>Sample 1</a></li>
-			<li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i>Sample 2</a></li>
-			<li><a href="https://vk.com/"><i class="fab fa-vk"></i>Sample 3</a></li>
-		</ul></aside></div></section>
-	<footer>© Just Oleg and Long Saaaaaaample 2019</footer>
+		<header>
+			<div class="head-bar">
+				<div class="logo">
+					<span><a href="index.html">Oleg | WebDeveloper</a></span>
+				</div>
+				<nav>
+					<a href="index.html">Home</a>
+					<a href="#my-projects">My Projects</a>
+					<a href="#about-me">About me</a>
+					<a href="#contact-me">Contact Me</a>
+				</nav>
+			</div>
+			<div class="main-bar">
+				<div class="title">
+					<h1>Welcome</h1>
+					<p>This my web portfolio website created to show my works and experience in front end development, to explain more about myself as a student and as a person, and some other things. Please enjoy.</p>
+					<a href="#about-me" class="see-more">See more</a>
+				</div>
+			</div>
+		</div>
+	</header>
 	
-</body>
+	<section class="about-me" id="about-me">
+		<h2>About me</h2>
+		<div class="about-me-main">
+			<div class="photo"><img src="img/Portfolio-pic.jpg" alt=""></div>
+			<div class="article"><h3>My experience</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste iure, consequuntur voluptatibus numquam, fugiat vero ad odit necessitatibus a illum fuga eveniet corrupti. Culpa, nisi soluta quisquam. Laborum facilis itaque sapiente praesentium, assumenda quisquam temporibus veritatis voluptatibus reprehenderit nisi in architecto velit illo hic, nostrum modi distinctio, inventore incidunt! Ullam mollitia, eos totam repudiandae debitis minima maiores dolores harum obcaecati non! Atque quidem accusantium quas incidunt ad minus deleniti, natus dolor tempore aut, voluptate molestias officiis magnam laudantium provident ut?</p></div>
+		</div>
+	</section>
+	<section class="my-projects" id="my-projects">
+		<h2>My projects</h2>
+		<div>
+			<div class="collage">
+				<div class="column-1">
+					<a href="projects/kitties/index.html"><img src="img/img-1.png" alt=""></a>
+					<a href="projects/golden/index.html"><img src="img/img-4.png" alt=""></a>
+					
+				</div>
+				<div class="column-2">
+					<a href="projects/lian/index.html"><img src="img/img-2.png" alt=""></a>
+					<a href="https://ymmy1.github.io/adopt-a-dog-spring2019/"><img src="img/img-5.jpg" alt=""></a>
+					
+					
+				</div>
+				<div class="column-3">
+					<a href="projects/dworld/index.html"><img src="img/img-3.png" alt=""></a>
+					<a href="projects/blow/index.html"><img src="img/img-6.png" alt=""></a>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="contact-me" class="registration-page">
+		<h2>Send an Email</h2>
+		<form action="get">
+			<label>Your Email <input type="email" placeholder="your@email.com"></label>
+			<label>Name<input type="text" name="name" placeholder="Your name"></label>
+			<label>Last Name<input type="text" name="LastName" placeholder="Last name"></label>
+			<label>Leave a message <textarea name="comment" cols="30" rows="5" placeholder="Type right here.."></textarea></label>
+			<div class="page__toggle">
+				<label class="toggle">
+					<input class="toggle__input" type="checkbox">
+					<span class="toggle__label">
+						<span class="toggle__text">I agree to the terms of service</span>
+					</span>
+				</label>
+			</div>
+			<input type="submit" class="button" value="Send" id="button">
+		</form>
+	</section>
+	<footer>
+		<div class="head-bar">
+			<div class="logo">
+				<span><a href="index.html">Oleg | WebDeveloper</a></span>
+			</div>
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="#my-projects">My Projects</a>
+				<a href="#about-me">About me</a>
+				<a href="#contact-me">Contact Me</a>
+			</nav>
+		</div></footer>
+	</body>
 </html>
