@@ -231,6 +231,7 @@ section.my-projects
     text-align: center;
 
     color: #fff;
+
 }
 
 .parent
@@ -288,9 +289,12 @@ section.my-projects
     height: 100%;
 
     content: '';
+    z-index: -1;
 
     background-color: rgba(52,73,94,.75);
 }
+
+
 /* Registration style */
 .registration-page
 {
