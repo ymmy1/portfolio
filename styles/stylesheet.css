@@ -11,8 +11,9 @@ header
 {
     width: 100%;
     height: 100vh;
+    color: #ffffff;
 
-    background: url(../img/bg-main.jpg) no-repeat center top/ cover;
+    background: url(../img/bg-main2.jpg) no-repeat center top/ cover;
 }
 .head-bar
 {
@@ -38,7 +39,7 @@ nav
 
     text-decoration: none;
 
-    color: black;
+    color: #ffffff;
 }
 nav a
 {
@@ -50,7 +51,7 @@ nav a
 
     text-decoration: none;
 
-    color: black;
+    color: #ffffff;
 }
 
 .head-bar a:hover
@@ -105,20 +106,16 @@ section
     padding-bottom: 100px;
 
     text-align: center;
-
+z-index: -1;
     background: #f2f2f2;
     background: linear-gradient(to right,  #f2f2f2 0%,#e8e8e8 50%,#c7c8cc 100%);
-}
-.photo
-{
-    width: 25%;
 }
 .about-me-main
 {
     display: flex;
 
     height: auto;
-
+z-index: 2;
     justify-content: space-around;
 }
 h2
@@ -146,7 +143,8 @@ h2
 }
 section.my-projects
 {
-    background: #f2f2f2;
+     background: url(../img/bg-main1.jpg) no-repeat center top/ cover;
+     height: 100vh;
 }
 
 .collage,
@@ -154,7 +152,7 @@ section.my-projects
 {
     display: flex;
 
-    margin-top: 2em;
+    margin-top: 6%;
     padding: 0 20%;
 
     justify-content: center;
@@ -549,7 +547,7 @@ footer
 {
     text-align: center;
 
-    background: black;
+     background:         linear-gradient(#4D7BB9, #000);
 }
 footer .logo
 {
