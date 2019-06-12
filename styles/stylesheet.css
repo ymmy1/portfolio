@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300|Molengo&display=swap');
-body
-{
-    font-family: 'Molengo', Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,700&display=swap');
+body{
+    font-family: 'Encode Sans Condensed', sans-serif;
+    background: url(../img/bg-main1.jpg) no-repeat center top/ cover;
 
     margin: 0;
     padding: 0;
@@ -10,10 +10,11 @@ body
 header
 {
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     color: #ffffff;
+    background: #222;
 
-    background: url(../img/bg-main2.jpg) no-repeat center top/ cover;
+    
 }
 .head-bar
 {
@@ -103,19 +104,24 @@ nav a
 section
 {
     margin: 0;
-    padding-bottom: 100px;
+    padding-bottom: 5%;
 
     text-align: center;
-z-index: -1;
-    background: #f2f2f2;
-    background: linear-gradient(to right,  #f2f2f2 0%,#e8e8e8 50%,#c7c8cc 100%);
+   
+}
+.about-me{
+
+  height: auto;
+  margin: 0;
+  background: #222;
+  color: #ffffff;
 }
 .about-me-main
 {
     display: flex;
 
     height: auto;
-z-index: 2;
+    z-index: 2;
     justify-content: space-around;
 }
 h2
@@ -123,28 +129,30 @@ h2
     font-size: 2.5em;
 
     margin: 0;
-    padding: 50px;
+    padding: 20px;
 }
-.about-me-main img
-{
-    width: 100%;
-
-    border: 5px solid white;
-    border-radius: 50px;
+.border-box{
+  width: 50%;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, red, purple);
+  padding: 3px;
 }
 .article
 {
-    width: 70%;
-    padding: 40px;
-
-    border: 5px rgba(255, 255, 255, .5) solid;
-    border-radius: 50px;
-    background-color: rgba(255, 255, 255, .3);
+     background: #222;
+  color: #ffffff;
+  padding: 2rem;
+  font-size: 100%;
+}
+.article p{
+  margin: 0;
 }
 section.my-projects
 {
      background: url(../img/bg-main1.jpg) no-repeat center top/ cover;
-     height: 100vh;
+     border-top: 10px  solid #222;
+
 }
 
 .collage,
@@ -152,7 +160,7 @@ section.my-projects
 {
     display: flex;
 
-    margin-top: 6%;
+    margin-top: 1%;
     padding: 0 20%;
 
     justify-content: center;
@@ -296,9 +304,12 @@ section.my-projects
 /* Registration style */
 .registration-page
 {
-    background: #f2f2f2;
-    background: linear-gradient(to left,  #f2f2f2 0%,#e8e8e8 50%,#c7c8cc 100%);
-}
+   height: 60vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+    }
 .registration-page form input,
 .registration-page form textarea
 {
@@ -307,23 +318,25 @@ section.my-projects
     margin: 8px auto;
 }
 
-.registration-page form
-{
-    width: 40%;
-    margin: 1.5em auto;
-    padding: 1.2em;
-
-    border: 5px rgba(255, 255, 255, .5) solid;
-    border-radius: 50px;
-    background-color: rgba(255, 255, 255, .3);
+form {  
+  padding: 1rem;
+  width: 40%;
+  color: #ffffff;
+  border-width: 3px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      #2c82c9, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
 }
-
 .registration-page form label
 {
     font-size: 1.2em;
     font-weight: bold;
 
-    color: #2c82c9 ;
+    color: #ffffff ;
 }
 
 .registration-page form input,
@@ -331,7 +344,7 @@ section.my-projects
 {
     font-size: .8em;
 
-    width: 70%;
+    width: 90%;
     padding: 2%;
 
     border: 2px rgba(255, 255, 255, .6) solid;
@@ -353,7 +366,7 @@ section.my-projects
 
     padding: 10px 50px;
 
-    color: #2c82c9 ;
+    color: #ffffff ;
     border-radius: 20px;
 }
 
@@ -437,7 +450,7 @@ section.my-projects
 .toggle__text{
   margin-top: auto;
   margin-bottom: auto;
-  color: #2c82c9;
+  color: #ffffff;
 }
 
 /*
@@ -602,14 +615,31 @@ footer a:first-child
     height: 34%;
   }
 }
+/*@media(max-width: 1024px){
+
+}*/
 @media (max-width: 800px){
+  .about-me-main{
+  padding: 2% 0;
+  }
   .registration-page form {
   width: 90%;
   padding: 1em 0em;
   margin: auto;
 }
+.border-box{
+width: 80%;
 }
-@media (max-width: 540px){
+.registration-page {
+  padding-bottom: 15%;
+}
+
+}
+@media (max-width: 550px){
+    .hide-p,
+    .about-me h2{
+    display: none;
+  }
   footer nav{
     display: flex;
     flex-direction: column;
