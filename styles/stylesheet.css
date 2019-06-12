@@ -304,7 +304,7 @@ section.my-projects
 /* Registration style */
 .registration-page
 {
-   height: 60vh;
+  
   margin: 0;
   display: grid;
   place-items: center;
@@ -649,3 +649,8 @@ width: 80%;
     margin: 0.5em 0;
   }
 }
+/*@media (max-height: : 870px){
+  .registration-page{
+    height: 80vh;
+  }
+}*/
