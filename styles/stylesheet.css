@@ -1,37 +1,59 @@
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,700&display=swap');
-body{
+body
+{
     font-family: 'Encode Sans Condensed', sans-serif;
-    background: url(../img/bg-main1.jpg) no-repeat center top/ cover;
 
     margin: 0;
     padding: 0;
+
+    background: url(../img/bg-main1.jpg) no-repeat center top/ cover;
 }
 
+*{
+    box-sizing: border-box;
+}
 header
 {
-    width: 100%;
-    height: 85vh;
-    color: #ffffff;
+    height: 80vh;
+    position: relative;
+    color: #fff;
     background: #222;
-
-    
 }
 .head-bar
 {
     display: flex;
-
-    padding: 50px 40px;
+    position: absolute;
+    width: 100%;
+    padding: 4% 3%;
 
     justify-content: space-between;
 }
 
-nav
+nav ul
 {
     display: flex;
-
+    margin: 0;
     justify-content: flex-end;
 }
+nav ul li {
+    list-style: none;
+}
+.logo2{
+    display: none;
+}
+.logo2 a{
+    position: absolute;
+    top: 6%;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
 
+    text-decoration: none;
+
+    color: #fff;
+}
 .logo a
 {
     font-size: 25px;
@@ -40,7 +62,7 @@ nav
 
     text-decoration: none;
 
-    color: #ffffff;
+    color: #fff;
 }
 nav a
 {
@@ -48,11 +70,11 @@ nav a
     font-weight: bold;
     font-style: italic;
 
-    margin-left: 40px;
+    margin-left: 2rem;
 
     text-decoration: none;
 
-    color: #ffffff;
+    color: #fff;
 }
 
 .head-bar a:hover
@@ -63,65 +85,59 @@ nav a
     color: #2c82c9 ;
 }
 
-.title
-{
-    position: absolute;
-    top: 33%;
-    right: 4%;
-
-    width: 50%;
-
+.welcome {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+}
+.title {
+    width: 35%;
+}
+.title h1 {
+    font-size: 2.4em;
+    margin: 0 0 3% 0;
+}
+.title p {
+    margin: 0 0 5% 0;
+    font-size: 0.85em;
+    padding: 0 25% 0 0;
+}
+.welcome-btn {
+    width: 40%;
     text-align: center;
-}
-
-.title h1
-{
-    font-family: 'Josefin Sans' ;
-    font-size: 7em;
-
-    margin: 0;
-}
-.title p
-{
-    font-size: 2.2em;
-
-    padding: 10px;
-}
-.see-more
-{
-    font-size: 2.2em;
-    font-weight: bold;
-
-    padding: 2% 20%;
-
+    font-size: 1.5em;
+    color: #fff;
+    background: #2c82c9;
     text-decoration: none;
-
-    color: #2c82c9 ;
-    border: 3px solid #2c82c9 ;
-    border-radius: 10px;
-    background: rgba(228, 233, 237, .9);
+    font-weight: bold;
+    padding: 2% 5%;
 }
+
 section
 {
     margin: 0;
     padding-bottom: 5%;
 
     text-align: center;
-   
 }
-.about-me{
+.about-me
+{
+    height: auto;
+    margin: 0;
 
-  height: auto;
-  margin: 0;
-  background: #222;
-  color: #ffffff;
+    color: #fff;
+    background: #222;
 }
 .about-me-main
 {
+    z-index: 2;
+
     display: flex;
 
     height: auto;
-    z-index: 2;
+
     justify-content: space-around;
 }
 h2
@@ -131,28 +147,32 @@ h2
     margin: 0;
     padding: 20px;
 }
-.border-box{
-  width: 50%;
-  padding: 1rem;
-  position: relative;
-  background: linear-gradient(to right, red, purple);
-  padding: 3px;
+.border-box
+{
+    position: relative;
+
+    width: 50%;
+    padding: 1rem;
+    padding: 3px;
+
+    background: linear-gradient(to right, red, purple);
 }
 .article
 {
-     background: #222;
-  color: #ffffff;
-  padding: 2rem;
-  font-size: 100%;
+    font-size: 100%;
+
+    padding: 2rem;
+
+    color: #fff;
+    background: #222;
 }
-.article p{
-  margin: 0;
+.article p
+{
+    margin: 0;
 }
 section.my-projects
 {
-     background: url(../img/bg-main1.jpg) no-repeat center top/ cover;
-     border-top: 10px  solid #222;
-
+    background: url(../img/bg-main1.jpg) no-repeat center top/ cover;
 }
 
 .collage,
@@ -166,8 +186,9 @@ section.my-projects
     justify-content: center;
 }
 
-.collage-2{
-  display: none;
+.collage-2
+{
+    display: none;
 }
 
 
@@ -237,7 +258,6 @@ section.my-projects
     text-align: center;
 
     color: #fff;
-
 }
 
 .parent
@@ -286,6 +306,7 @@ section.my-projects
 .child:before
 {
     position: absolute;
+    z-index: -1;
     top: 0;
     left: 0;
 
@@ -295,52 +316,54 @@ section.my-projects
     height: 100%;
 
     content: '';
-    z-index: -1;
 
     background-color: rgba(52,73,94,.75);
 }
 
 
 /* Registration style */
-.registration-page
+.email-page
 {
-  
-  margin: 0;
-  display: grid;
-  place-items: center;
-  color: #ffffff;
-    }
-.registration-page form input,
-.registration-page form textarea
+    display: grid;
+
+    margin: 0;
+
+    color: #fff;
+
+    place-items: center;
+}
+.email-page form input,
+.email-page form textarea
 {
     display: block;
 
     margin: 8px auto;
 }
 
-form {  
-  padding: 1rem;
-  width: 40%;
-  color: #ffffff;
-  border-width: 3px;
-  border-style: solid;
-  border-image: 
-    linear-gradient(
-      to bottom, 
-      #2c82c9, 
-      rgba(0, 0, 0, 0)
+form
+{
+    width: 40%;
+    padding: 1rem;
+
+    color: #fff;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(
+    to bottom,
+    #2c82c9,
+    rgba(0, 0, 0, 0)
     ) 1 100%;
 }
-.registration-page form label
+.email-page form label
 {
     font-size: 1.2em;
     font-weight: bold;
 
-    color: #ffffff ;
+    color: #fff ;
 }
 
-.registration-page form input,
-.registration-page form textarea
+.email-page form input,
+.email-page form textarea
 {
     font-size: .8em;
 
@@ -352,7 +375,7 @@ form {
     background-color: rgba(255, 255, 255, .5);
 }
 
-.registration-page form input:focus
+.email-page form input:focus
 {
     outline: none;
     background-color: rgba(255, 255, 255, .7);
@@ -365,8 +388,8 @@ form {
     font-weight: bold;
 
     padding: 10px 50px;
-
-    color: #ffffff ;
+    margin-top: 5%;
+    color: #fff ;
     border-radius: 20px;
 }
 
@@ -378,189 +401,12 @@ form {
     background: rgba(255, 255, 255, .7);
 }
 
-/* Copy - Paste, Have no idea what is going on below, just changed the size and color, somehow lol */
-
-.toggle{
-  --uiToggleSize: var(--toggleSize, 20px);
-  --uiToggleIndent: var(--toggleIndent, .4em);
-  --uiToggleBorderWidth: var(--toggleBorderWidth, 2px);
-  --uiToggleColor: var(--toggleColor, #000);
-  --uiToggleDisabledColor: var(--toggleDisabledColor, #868e96);
-  --uiToggleBgColor: var(--toggleBgColor, #fff);
-  --uiToggleArrowWidth: var(--toggleArrowWidth, 2px);
-  --uiToggleArrowColor: var(--toggleArrowColor, #fff);
-
-  display: inline-block;
-  position: relative;
-}
-
-.page__toggle {
-  margin: 15px 0;
-}
-.toggle__input{
-  position: absolute;
-  left: -99999px;
-}
-
-.toggle__label{
-  display: inline-flex;
-  cursor: pointer;
-  min-height: var(--uiToggleSize);
-  padding-left: calc(var(--uiToggleSize) + var(--uiToggleIndent));
-}
-
-.toggle__label:before, .toggle__label:after{
-  content: "";
-  box-sizing: border-box;  
-  width: 1em;
-  height: 1em;
-  font-size: var(--uiToggleSize);
-
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-.toggle__label:before{
-  border: var(--uiToggleBorderWidth) solid var(--uiToggleColor);
-  z-index: 2;
-}
-
-.toggle__input:disabled ~ .toggle__label:before{
-  border-color: var(--uiToggleDisabledColor);
-}
-
-.toggle__input:focus ~ .toggle__label:before{
-  box-shadow: 0 0 0 2px var(--uiToggleBgColor), 0 0 0px 4px var(--uiToggleColor);
-}
-
-.toggle__input:not(:disabled):checked:focus ~ .toggle__label:after{
-  box-shadow: 0 0 0 2px var(--uiToggleBgColor), 0 0 0px 4px var(--uiToggleColor);
-}
-
-.toggle__input:not(:disabled) ~ .toggle__label:after{
-  background-color: var(--uiToggleColor);
-  opacity: 0;
-}
-
-.toggle__input:not(:disabled):checked ~ .toggle__label:after{
-  opacity: 1;
-}
-
-.toggle__text{
-  margin-top: auto;
-  margin-bottom: auto;
-  color: #ffffff;
-}
-
-/*
-The arrow size and position depends from sizes of square because I needed an arrow correct positioning from the top left corner of the element toggle
-*/
-
-.toggle__text:before{
-  content: "";
-  box-sizing: border-box;
-  width: 0;
-  height: 0;
-  font-size: var(--uiToggleSize);
-
-  border-left-width: 0;
-  border-bottom-width: 0;
-  border-left-style: solid;
-  border-bottom-style: solid;
-  border-color: var(--uiToggleArrowColor);
-
-  position: absolute;
-  top: .5428em;
-  left: .2em;
-  z-index: 3;
-
-  transform-origin: left top;
-  transform: rotate(-40deg) skew(10deg);
-}
-
-.toggle__input:not(:disabled):checked ~ .toggle__label .toggle__text:before{
-  width: .5em;
-  height: .25em;
-  border-left-width: var(--uiToggleArrowWidth);
-  border-bottom-width: var(--uiToggleArrowWidth);
-  will-change: width, height;
-  transition: width .1s ease-out .2s, height .2s ease-out;
-}
-
-/*
-=====
-LEVEL 2. PRESENTATION STYLES
-=====
-*/
-
-/* 
-The demo skin
-*/
-
-.toggle__label:before, .toggle__label:after{
-  border-radius: 2px;
-}
-
-/* 
-The animation of switching states
-*/
-
-.toggle__input:not(:disabled) ~ .toggle__label:before,
-.toggle__input:not(:disabled) ~ .toggle__label:after{
-  opacity: 1;
-  transform-origin: center center;
-  will-change: transform;
-  transition: transform .2s ease-out;
-}
-
-.toggle__input:not(:disabled) ~ .toggle__label:before{
-  transform: rotateY(0deg);
-  transition-delay: .2s;
-}
-
-.toggle__input:not(:disabled) ~ .toggle__label:after{
-  transform: rotateY(90deg);
-}
-
-.toggle__input:not(:disabled):checked ~ .toggle__label:before{
-  transform: rotateY(-90deg);
-  transition-delay: 0s;
-}
-
-.toggle__input:not(:disabled):checked ~ .toggle__label:after{
-  transform: rotateY(0deg);
-  transition-delay: .2s;
-}
-
-.toggle__text:before{
-  opacity: 0;
-}
-
-.toggle__input:not(:disabled):checked ~ .toggle__label .toggle__text:before{
-  opacity: 1;
-  transition: opacity .1s ease-out .3s, width .1s ease-out .5s, height .2s ease-out .3s;
-}
-
-/*
-=====
-LEVEL 3. SETTINGS
-=====
-*/
-
-.toggle{
-  --toggleColor: rgba(0, 0, 0, 0.2);
-  --toggleBgColor: rgba(0, 0, 0, 0.7);
-  --toggleSize: 20px;
-}
-
-/* Copy - Paste */
 
 footer
 {
     text-align: center;
 
-     background:         linear-gradient(#4D7BB9, #000);
+    background: #222;
 }
 footer .logo
 {
@@ -576,8 +422,9 @@ footer .head-bar
 }
 footer nav
 {
+    font-size: .8em;
+
     justify-content: center;
-    font-size: 0.8em;
 }
 footer .head-bar a
 {
@@ -592,65 +439,100 @@ footer a:first-child
 
 @media (max-width: 1150px)
 {
-  .collage{
-    display: none;
-  }
-  .collage-2 {
-    display: block;
-  }
-  .child{
-     width: 100%;
-    height: 10em;
-    margin: 0.2em auto;
-  }
-
-  .collage-2 a{
-    position: static;
-    display: inline-block;
-    padding: 1.5em 0;
-    color:#ffffff;
-    font-weight: bold;
-    background-color: rgba(0,0,0,0.2);
+    .collage
+    {
+        display: none;
+    }
+    .collage-2
+    {
+        display: block;
+    }
+    .child
+    {
         width: 100%;
-    height: 34%;
-  }
-}
-/*@media(max-width: 1024px){
+        height: 10em;
+        margin: .2em auto;
+    }
 
-}*/
-@media (max-width: 800px){
-  .about-me-main{
-  padding: 2% 0;
-  }
-  .registration-page form {
-  width: 90%;
-  padding: 1em 0em;
-  margin: auto;
-}
-.border-box{
-width: 80%;
-}
-.registration-page {
-  padding-bottom: 15%;
+    .collage-2 a
+    {
+        font-weight: bold;
+
+        position: static;
+
+        display: inline-block;
+
+        width: 100%;
+        height: 100%;
+        padding: 1.5em 0;
+
+        color: #fff;
+        background-color: rgba(0,0,0,.2);
+    }
 }
 
-}
-@media (max-width: 550px){
-    .hide-p,
-    .about-me h2{
-    display: none;
-  }
-  footer nav{
-    display: flex;
-    flex-direction: column;
-  }
-  footer nav a,
-  footer nav a:first-child{
-    margin: 0.5em 0;
-  }
-}
-/*@media (max-height: : 870px){
-  .registration-page{
+
+
+@media (max-width: 860px){
+   
+   header {
     height: 80vh;
-  }
-}*/
+   }
+    .title{
+    width: 80%;
+    justify-content: center;
+    }
+    .title p {
+        padding: 0;
+    }
+    .head-bar {
+        display: none;
+    }
+    .logo2{
+        display: block;
+    }
+}
+@media (max-width: 800px)
+{
+    .about-me-main
+    {
+        padding: 2% 0;
+    }
+    .email-page form
+    {
+        width: 90%;
+        margin: auto;
+        padding: 1em 0;
+    }
+    .border-box
+    {
+        width: 80%;
+    }
+    .email-page
+    {
+        padding-bottom: 15%;
+    }
+}
+@media (max-width: 550px)
+{
+    .hide-p,
+    .about-me h2
+    {
+        display: none;
+    }
+    footer nav
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    footer nav a,
+    footer nav a:first-child
+    {
+        margin: .5em 0;
+    }
+}
+@media (max-width: 430px){
+    .logo2 a{
+        font-size: 2em;
+    }
+}
