@@ -56,7 +56,69 @@ body {
   flex-direction: center;
   align-items: center; }
   .skills img {
-    height: 60%; }
+    height: 60%;
+    padding: 0 10px 0 0; }
+
+.projects-main {
+  text-align: center; }
+  .projects-main h2 {
+    font-size: 2.7em;
+    font-family: 'Arima Madurai', cursive; }
+  .projects-main .my-projects {
+    display: flex;
+    justify-content: space-between; }
+    .projects-main .my-projects .project-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .projects-main .my-projects .project-block h3 {
+        font-size: 2em; }
+      .projects-main .my-projects .project-block img {
+        width: 70%;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+      .projects-main .my-projects .project-block .project-links {
+        margin-top: 3%; }
+
+.contact {
+  margin: 5% auto 2%;
+  display: block;
+  width: 30%;
+  font-size: 3.3em; }
+
+footer {
+  text-align: center;
+  background: #222222;
+  padding: 1% 35%; }
+  footer ul, footer .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    footer ul li, footer .links li {
+      list-style: none; }
+      footer ul li a, footer .links li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 2em;
+        font-weight: bold;
+        transition: ease;
+        transition-duration: 0.2s; }
+      footer ul li a:hover, footer .links li a:hover {
+        color: #2C82C9; }
+  footer .links {
+    padding: 0 30%;
+    color: #ffffff; }
+    footer .links a {
+      color: #ffffff;
+      margin-right: 10%;
+      text-decoration: none;
+      transition: ease;
+      transition-duration: 0.2s; }
+      footer .links a i {
+        font-size: 2em; }
+      footer .links a p {
+        font-size: 1.2em; }
+    footer .links a:hover {
+      color: #2C82C9; }
 
 .container-birds {
   z-index: 1;
