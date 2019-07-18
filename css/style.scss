@@ -13,6 +13,13 @@ body
 *::after {
     box-sizing: border-box;
 }
+.blink{
+	animation: blinking 1.3s ease 3;
+}
+@keyframes blinking{
+	50%{color:#f62459; }
+	90%{color:#f62459; }
+}
 .button {
 	color: #ffffff;
 	text-decoration: none;
@@ -110,29 +117,12 @@ body
 footer{
 	text-align: center;
 	background: #222222;
-	padding: 1% 35%;
-	ul, .links{
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
-		li{
-			list-style: none;
-			a{
-				color: #ffffff;
-				text-decoration: none;
-				font-size: 2em;
-				font-weight: bold;
-				transition: ease;
-				transition-duration: 0.2s;
-			}
-			a:hover{
-				color: #2C82C9;
-			}
-		}
-	}
+	padding: 2% 35% 0;
 	.links{
 		padding: 0 30%;
 		color: #ffffff;
+		display:flex;
+		justify-content:space-around;
 		a{
 			color: #ffffff;
 			margin-right: 10%;
@@ -140,7 +130,7 @@ footer{
 			transition: ease;
 			transition-duration: 0.2s;
 			i{
-			font-size: 2em;
+			font-size: 2.9em;
 		}
 		p{
 			font-size: 1.2em;
@@ -149,8 +139,6 @@ footer{
 			a:hover{
 			color: #2C82C9;
 		}
-
-
 	}
 }
 // Birds start

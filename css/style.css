@@ -8,6 +8,15 @@ body {
 *::after {
   box-sizing: border-box; }
 
+.blink {
+  animation: blinking 1.3s ease 3; }
+
+@keyframes blinking {
+  50% {
+    color: #f62459; }
+  90% {
+    color: #f62459; } }
+
 .button {
   color: #ffffff;
   text-decoration: none;
@@ -88,25 +97,12 @@ body {
 footer {
   text-align: center;
   background: #222222;
-  padding: 1% 35%; }
-  footer ul, footer .links {
-    display: flex;
-    align-items: center;
-    justify-content: space-around; }
-    footer ul li, footer .links li {
-      list-style: none; }
-      footer ul li a, footer .links li a {
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 2em;
-        font-weight: bold;
-        transition: ease;
-        transition-duration: 0.2s; }
-      footer ul li a:hover, footer .links li a:hover {
-        color: #2C82C9; }
+  padding: 2% 35% 0; }
   footer .links {
     padding: 0 30%;
-    color: #ffffff; }
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around; }
     footer .links a {
       color: #ffffff;
       margin-right: 10%;
@@ -114,7 +110,7 @@ footer {
       transition: ease;
       transition-duration: 0.2s; }
       footer .links a i {
-        font-size: 2em; }
+        font-size: 2.9em; }
       footer .links a p {
         font-size: 1.2em; }
     footer .links a:hover {
