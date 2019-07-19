@@ -17,8 +17,8 @@ body
 	animation: blinking 1.3s ease 3;
 }
 @keyframes blinking{
-	50%{color:#f62459; }
-	90%{color:#f62459; }
+	1%{color:#f62459; }
+	70%{color:#f62459; }
 }
 .button {
 	color: #ffffff;
@@ -112,8 +112,8 @@ body
 .contact{
 	margin: 5% auto 2%;
 	display:block;
-	width: 30%;
-	font-size: 3.3em;
+	width: 250px;
+	font-size: 2em;
 }
 footer{
 	text-align: center;
