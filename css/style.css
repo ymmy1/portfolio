@@ -17,13 +17,33 @@ body {
   70% {
     color: #f62459; } }
 
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */ }
+
 .button {
   color: #ffffff;
   text-decoration: none;
   font-size: 1.2em;
   background: #2C82C9;
   font-weight: bold;
-  padding: 0 1.2em; }
+  padding: 0 1.2em;
+  border: 1px solid #2C82C9;
+  border-radius: 15px; }
+  .button:hover {
+    background: #ffffff;
+    color: #2C82C9;
+    transition: ease;
+    transition-duration: 0.5s; }
 
 .title {
   font-family: 'Arima Madurai', cursive;
@@ -33,6 +53,11 @@ body {
     font-size: 3em;
     padding: 0;
     margin: 0; }
+  .title .location {
+    text-decoration: none;
+    color: inherit; }
+    .title .location:hover {
+      color: #EA4335; }
   .title .buttons {
     margin: 5% 20%;
     display: flex;
@@ -82,18 +107,35 @@ body {
       align-items: center; }
       .projects-main .my-projects .project-block h3 {
         font-size: 2em; }
+      .projects-main .my-projects .project-block a {
+        width: 70%; }
+      .projects-main .my-projects .project-block a:hover {
+        transform: scale(1.1);
+        transition: ease;
+        transition-duration: 0.5s; }
       .projects-main .my-projects .project-block img {
         border: 1px solid #000000;
-        width: 70%;
+        width: 100%;
         box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
       .projects-main .my-projects .project-block .project-links {
         margin-top: 3%; }
+        .projects-main .my-projects .project-block .project-links a {
+          margin: 0 1px; }
 
 .contact {
   margin: 5% auto 2%;
   display: block;
   width: 250px;
   font-size: 2em; }
+
+.devider_img {
+  text-align: center;
+  width: 100%; }
+
+.about_main {
+  display: flex;
+  justify-content: space-around;
+  padding: 2%; }
 
 footer {
   text-align: center;
