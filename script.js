@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 	
-	$('a.contact').click(function(e){
+	$('a.contact-me').click(function(e){
 		e.preventDefault();
 		$id = $(this).attr('href');
 		$('.email a').removeClass("blink");
@@ -10,8 +10,8 @@ jQuery(document).ready(function($){
 		$('.email a').addClass("blink");
 	});
 
-		$('a.imgcontact').click(function(z){
-		z.preventDefault();
+		$('a.imgcontact').click(function(e){
+		e.preventDefault();
 		$id = $(this).attr('href');
 		$('body,html').animate({
 			scrollTop: $($id).offset().top -20
