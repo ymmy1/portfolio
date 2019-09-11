@@ -34,16 +34,19 @@ body {
   color: #ffffff;
   text-decoration: none;
   font-size: 1.2em;
-  background: #2C82C9;
+  background: #5D438F;
   font-weight: bold;
   padding: 0 1.2em;
-  border: 1px solid #2C82C9;
+  border: 1px solid #5D438F;
   border-radius: 15px; }
   .button:hover {
     background: #ffffff;
-    color: #2C82C9;
+    color: #5D438F;
     transition: ease;
     transition-duration: 0.5s; }
+
+.link {
+  margin: 10px 0; }
 
 .title {
   font-family: 'Arima Madurai', cursive;
@@ -59,9 +62,10 @@ body {
     .title .location:hover {
       color: #EA4335; }
   .title .buttons {
-    margin: 5% 20%;
+    margin: 0 20%;
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    flex-wrap: wrap; }
   .title .links {
     width: 50%;
     margin: auto;
@@ -81,16 +85,19 @@ body {
       margin: 0; }
 
 .skills {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 3.3em;
   padding: 0 10%;
-  background: lightgray;
+  background: rgba(242, 241, 239, 0.8);
   display: flex;
   justify-content: space-around;
   flex-direction: center;
   align-items: center; }
   .skills img {
-    height: 60%;
+    height: 58%;
     padding: 0 10px 0 0; }
 
 .projects-main {
@@ -100,21 +107,21 @@ body {
     font-family: 'Arima Madurai', cursive; }
   .projects-main .my-projects {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-around;
+    flex-wrap: wrap; }
     .projects-main .my-projects .project-block {
       display: flex;
       flex-direction: column;
       align-items: center;
-      flex-basis: 30%; }
+      width: 500px; }
       .projects-main .my-projects .project-block span {
         margin: 5% 0 0;
         color: #616161;
-        font-style: italic;
-        width: 70%; }
+        font-style: italic; }
       .projects-main .my-projects .project-block h3 {
         font-size: 2em; }
       .projects-main .my-projects .project-block a {
-        width: 70%; }
+        width: 100%; }
       .projects-main .my-projects .project-block a:hover {
         transform: scale(1.1);
         transition: ease;
@@ -134,39 +141,38 @@ body {
   width: 250px;
   font-size: 2em; }
 
-.devider_img {
-  text-align: center;
-  width: 100%;
-  padding: 5% 0 1%; }
+hr {
+  border-width: 2px;
+  background: #ccc;
+  margin: 40px 20px; }
 
 .opacity {
   -webkit-filter: opacity(90%);
   filter: opacity(90%); }
 
-.about_main {
-  font-family: 'Arima Madurai', cursive;
+.about {
   display: flex;
-  justify-content: space-around;
-  padding: 2% 5%; }
-  .about_main .coding {
-    width: 25%; }
-    .about_main .coding img {
-      width: 100%;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      padding: 5px;
-      width: 110%; }
-  .about_main .about_title {
-    width: 65%;
-    margin-top: 2%; }
-    .about_main .about_title h3 {
-      font-size: 2em;
-      padding: 0;
-      margin: 0; }
-    .about_main .about_title p {
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto; }
+  .about .coding {
+    width: auto; }
+    .about .coding a {
+      width: 100%; }
+      .about .coding a img {
+        width: 100%; }
+  .about .about_title {
+    font-family: 'Arima Madurai', cursive;
+    text-align: center;
+    width: auto; }
+    .about .about_title h3 {
       margin: 0;
-      padding: 0;
-      font-size: 1.3em; }
+      font-size: 2em; }
+    .about .about_title p {
+      margin: 0 0 3%;
+      font-size: 1.1em; }
 
 footer {
   text-align: center;
@@ -188,7 +194,7 @@ footer {
       footer .links a p {
         font-size: 1.2em; }
     footer .links a:hover {
-      color: #2C82C9; }
+      color: #5D438F; }
 
 .container-birds {
   z-index: 1;
@@ -198,7 +204,7 @@ footer {
   align-items: center;
   justify-content: center;
   min-height: 70vh;
-  background-image: linear-gradient(to bottom, #5F8587 0%, #4F5F58 100%), url("../img/forest-green-hd-wallpaper-129105.jpg");
+  background-image: url("../img/forest-green-hd-wallpaper-129105.jpg");
   background-blend-mode: soft-light;
   background-size: cover;
   background-position: center center;

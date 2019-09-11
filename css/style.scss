@@ -45,18 +45,22 @@ body {
     color: #ffffff;
     text-decoration: none;
     font-size: 1.2em;
-    background: #2C82C9;
+    background: #5D438F;
     font-weight: bold;
     padding: 0 1.2em;
-    border: 1px solid #2C82C9;
+    border: 1px solid #5D438F;
     border-radius: 15px;
 
     &:hover {
         background: #ffffff;
-        color: #2C82C9;
+        color: #5D438F;
         transition: ease;
         transition-duration: 0.5s;
     }
+}
+
+.link {
+    margin: 10px 0;
 }
 
 .title {
@@ -80,9 +84,10 @@ body {
     }
 
     .buttons {
-        margin: 5% 20%;
+        margin: 0 20%;
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     .links {
@@ -114,17 +119,21 @@ body {
 }
 
 .skills {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     width: 100%;
     height: 3.3em;
     padding: 0 10%;
-    background: lightgray;
+    background: rgba(242, 241, 239, 0.8);
     display: flex;
     justify-content: space-around;
     flex-direction: center;
     align-items: center;
 
     img {
-        height: 60%;
+        height: 58%;
+
         padding: 0 10px 0 0;
     }
 }
@@ -139,19 +148,20 @@ body {
 
     .my-projects {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        flex-wrap: wrap;
 
         .project-block {
             display: flex;
             flex-direction: column;
             align-items: center;
-            flex-basis: 30%;
+            width: 500px;
+
 
             span {
                 margin: 5% 0 0;
                 color: #616161;
                 font-style: italic;
-                width: 70%;
             }
 
             h3 {
@@ -159,7 +169,7 @@ body {
             }
 
             a {
-                width: 70%;
+                width: 100%;
 
             }
 
@@ -195,10 +205,10 @@ body {
     font-size: 2em;
 }
 
-.devider_img {
-    text-align: center;
-    width: 100%;
-    padding: 5% 0 1%;
+hr {
+    border-width: 2px;
+    background: #ccc;
+    margin: 40px 20px;
 }
 
 .opacity {
@@ -206,41 +216,43 @@ body {
     filter: opacity(90%);
 }
 
-.about_main {
-    font-family: 'Arima Madurai', cursive;
+.about {
     display: flex;
-    justify-content: space-around;
-    padding: 2% 5%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
 
     .coding {
-        width: 25%;
+        width: auto;
 
-        img {
+        a {
             width: 100%;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            padding: 5px;
-            width: 110%;
 
+            img {
+                width: 100%;
+            }
         }
     }
 
     .about_title {
-        width: 65%;
-        margin-top: 2%;
+
+        font-family: 'Arima Madurai', cursive;
+        text-align: center;
+        width: auto;
 
         h3 {
-            font-size: 2em;
-            padding: 0;
             margin: 0;
+            font-size: 2em;
         }
 
         p {
-            margin: 0;
-            padding: 0;
-            font-size: 1.3em;
+            margin: 0 0 3%;
+            font-size: 1.1em;
         }
     }
+
 }
 
 footer {
@@ -271,7 +283,7 @@ footer {
         }
 
         a:hover {
-            color: #2C82C9;
+            color: #5D438F;
         }
     }
 }
@@ -286,7 +298,7 @@ footer {
     justify-content: center;
     // min-height: 100vh;
     min-height: 70vh;
-    background-image: linear-gradient(to bottom, #5F8587 0%, #4F5F58 100%), url('../img/forest-green-hd-wallpaper-129105.jpg');
+    background-image: url('../img/forest-green-hd-wallpaper-129105.jpg');
     background-blend-mode: soft-light;
     background-size: cover;
     background-position: center center;
