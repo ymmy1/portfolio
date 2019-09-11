@@ -40,10 +40,11 @@ body {
   border: 1px solid #5D438F;
   border-radius: 15px; }
   .button:hover {
-    background: #ffffff;
-    color: #5D438F;
+    background: #a678ff;
+    color: #ffffff;
+    border-color: #ffffff;
     transition: ease;
-    transition-duration: 0.5s; }
+    transition-duration: 0.2s; }
 
 .link {
   margin: 10px 0; }
@@ -78,7 +79,7 @@ body {
       transition: ease;
       transition-duration: 0.2s; }
     .title .links a:hover {
-      color: #ffffff; }
+      color: #a678ff; }
     .title .links i {
       font-size: 2em; }
     .title .links p {
@@ -150,6 +151,9 @@ hr {
   -webkit-filter: opacity(90%);
   filter: opacity(90%); }
 
+.code {
+  font-size: 1.3em; }
+
 .about {
   display: flex;
   flex-direction: column;
@@ -194,7 +198,7 @@ footer {
       footer .links a p {
         font-size: 1.2em; }
     footer .links a:hover {
-      color: #5D438F; }
+      color: #a678ff; }
 
 .container-birds {
   z-index: 1;
