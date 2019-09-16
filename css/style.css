@@ -30,6 +30,16 @@ body {
   /* Non-prefixed version, currently
                                   supported by Chrome and Opera */ }
 
+button {
+  text-decoration: none;
+  font-size: 1.2em;
+  background: #5D438F;
+  padding: 0 1.2em;
+  border: 1px solid #5D438F;
+  border-radius: 15px;
+  color: rgba(242, 241, 239, 0.5);
+  cursor: not-allowed; }
+
 .button {
   color: #ffffff;
   text-decoration: none;
@@ -79,7 +89,7 @@ body {
       transition: ease;
       transition-duration: 0.2s; }
     .title .links a:hover {
-      color: #a678ff; }
+      color: #5D438F; }
     .title .links i {
       font-size: 2em; }
     .title .links p {
@@ -140,7 +150,8 @@ body {
   margin: 0 auto 2%;
   display: block;
   width: 250px;
-  font-size: 2em; }
+  font-size: 2em;
+  text-align: center; }
 
 hr {
   border-width: 2px;
@@ -198,7 +209,7 @@ footer {
       footer .links a p {
         font-size: 1.2em; }
     footer .links a:hover {
-      color: #a678ff; }
+      color: #5D438F; }
 
 .container-birds {
   z-index: 1;
