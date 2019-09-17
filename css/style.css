@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Arima+Madurai:300");
 body {
   margin: 0;
   padding: 0; }
@@ -60,7 +59,7 @@ button {
   margin: 10px 0; }
 
 .title {
-  font-family: 'Arima Madurai', cursive;
+  font-family: 'Arima Madurai';
   color: black;
   text-align: center; }
   .title h1 {
@@ -73,7 +72,7 @@ button {
     .title .location:hover {
       color: #EA4335; }
   .title .buttons {
-    margin: 0 20%;
+    margin: 0 20% 2%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; }
@@ -115,7 +114,7 @@ button {
   text-align: center; }
   .projects-main h2 {
     font-size: 2.7em;
-    font-family: 'Arima Madurai', cursive; }
+    font-family: 'Arima Madurai'; }
   .projects-main .my-projects {
     display: flex;
     justify-content: space-around;
@@ -179,7 +178,7 @@ hr {
       .about .coding a img {
         width: 100%; }
   .about .about_title {
-    font-family: 'Arima Madurai', cursive;
+    font-family: 'Arima Madurai';
     text-align: center;
     width: auto; }
     .about .about_title h3 {
