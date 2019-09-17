@@ -75,7 +75,7 @@ button {
 }
 
 .title {
-    font-family: 'Arima Madurai';
+    font-family: 'Arima Madurai', cursive;
     color: black;
     text-align: center;
 
@@ -95,7 +95,7 @@ button {
     }
 
     .buttons {
-        margin: 0 20% 2%;
+        margin: 0 20%;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -154,7 +154,7 @@ button {
 
     h2 {
         font-size: 2.7em;
-        font-family: 'Arima Madurai';
+        font-family: 'Arima Madurai', cursive;
     }
 
     .my-projects {
@@ -254,7 +254,7 @@ hr {
 
     .about_title {
 
-        font-family: 'Arima Madurai';
+        font-family: 'Arima Madurai', cursive;
         text-align: center;
         width: auto;
 
