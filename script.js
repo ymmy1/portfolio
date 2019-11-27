@@ -3,11 +3,11 @@ jQuery(document).ready(function($) {
     $('a.contact-me').click(function(e) {
         e.preventDefault();
         $id = $(this).attr('href');
-        $('.aemail').removeClass("blink");
+        $('.blinkingred').removeClass("blink");
         $('body,html').animate({
             scrollTop: $($id).offset().top - 20
         }, 750);
-        $('.aemail').addClass("blink");
+        $('.blinkingred').addClass("blink");
     });
 
     $('a.imgcontact').click(function(e) {
