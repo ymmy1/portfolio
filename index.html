@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oleg | Home </title>
-    <script type="text/javascript" src="https://spikmi.com/Widget?Id=571"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="img/icon/icon3.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon/favicon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -14,45 +14,26 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="noselect">
-    <header id="home">
+<body>
+    <header id="home" class="noselect">
         <div class="container-birds">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav ml-auto mt-2">
+                            <li class="nav-item"><a class="nav-link"   href="https://github.com/ymmy1" target="_blank"><i class="fab fa-github-square"></i></a></li>
+                            <li class="nav-item"><a class="nav-link"   href="https://www.linkedin.com/in/oleg-nosyrev-440640114" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li class="nav-item"><a class="nav-link"   href="mailto:myymmy18@gmail.com" target="_blank"><i class="fas fa-at"></i></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#projects-main">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        </ul>
+                   </div>
+                </nav>
             <div class="title">
                 <h1 class="main-title">Front End Web Developer</h1>
                 <a href="https://maps.google.com/?q=Seattle" class="location" target="_blank">
                     <i class="fas fa-map-marker-alt"></i>
                     Seattle, Washington, USA
                 </a>
-                <span class="buttons">
-                    <a href="img/Oleg_Nosyrev_resume.pdf" class="button link" download>Resume</a>
-                    <button class="link" disabled>Cover Letter</button>
-                </span>
-                <div class="links">
-                    <a href="https://github.com/ymmy1" target="_blank">
-                        <div class="github">
-                            <i class="fab fa-github-square"></i>
-                            <p class="mini-block github">
-                                GitHub
-                            </p>
-                        </div>
-                    </a>
-                    <a href="https://www.linkedin.com/in/oleg-nosyrev-440640114" target="_blank" class="blinkingred">
-                        <div class="linkedin">
-                            <i class="fab fa-linkedin"></i>
-                            <p class="mini-block linkedin">
-                                LinkedIn
-                            </p>
-                        </div>
-                    </a>
-                    <a href="mailto:myymmy18@gmail.com" target="_blank" class="aemail blinkingred">
-                        <div class="email">
-                            <i class="fas fa-at"></i>
-                            <p class="mini-block email">
-                                Email
-                            </p>
-                        </div>
-                    </a>
-                </div>
             </div>
             <div class="bird-container bird-container--one">
                 <div class="bird bird--one"></div>
@@ -66,7 +47,7 @@
             <div class="bird-container bird-container--four">
                 <div class="bird bird--four"></div>
             </div>
-            <nav class="skills">
+            <!-- <nav class="skills">
                 <img src="img/skills/github_resized.png" alt="">
                 <img src="img/skills/git_resized.png" alt="">
                 <img src="img/skills/html5_resized.png" alt="">
@@ -75,7 +56,7 @@
                 <img src="img/skills/jquery_resized.png" alt="">
                 <img src="img/skills/es6_resized.png" alt="">
                 <img src="img/skills/vue_resized.png" alt="">
-            </nav>
+            </nav> -->
         </div>
     </header>
     <section id="projects-main" class="projects-main">
@@ -124,20 +105,8 @@
             </div>
         </div>
     </section>
-    <hr>
-    <section>
-        <div class="about">
-            <div class="coding">
-                <a href="img/about/certificate.jpg"><img src="img/about/UW-cut.jpg" alt="" class="opacity img-fluid img-thumbnail"></a>
-            </div>
-            <div class="about_title">
-                <h3 class="display-4">About</h3>
-                <p class="about_text">An English/Russian/Lithuanian speaking beginner developer with a fresh mind. Currently finishing University of Washington Front End Development program, looking for internships and no experience jobs in front end development.</p>
-            </div>
-            <a href="#home" class="button contact-me">Contact Me</a>
-        </div>
-    </section>
-    <footer>
+    <!-- <hr> -->
+    <footer id="footer"> 
         <div class="links">
             <a href="https://github.com/ymmy1" target="_blank">
                 <div class="github">
