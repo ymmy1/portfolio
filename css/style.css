@@ -76,6 +76,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+  font-size: 20px;
 }
 
 button {
@@ -192,7 +193,7 @@ button {
 }
 
 .projects-main {
-  background: rgba(250, 250, 250, 0.9);
+  background: #fafafa;
   text-align: center;
   padding: 20px;
 }
@@ -201,6 +202,31 @@ button {
   margin: 0 0 30px 0;
   font-size: 2.7em;
   font-family: 'Arima Madurai', cursive;
+}
+
+.projects-main .universities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.projects-main .universities img {
+  width: 50px;
+  display: block;
+}
+
+.projects-main .universities h5 {
+  margin-left: 15px;
+  font-size: 1.7em;
+}
+
+.projects-main hr {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .projects-main .my-projects {
