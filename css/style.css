@@ -173,6 +173,7 @@ button {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  margin: 10px 0;
 }
 
 .projects-main .universities img {
