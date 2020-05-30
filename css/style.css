@@ -336,7 +336,7 @@ footer .footer-dark {
 }
 
 footer .footer-dark .links {
-  padding: 1% 40%;
+  padding: 30px 40%;
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -357,6 +357,7 @@ footer .footer-dark .links a i {
 
 footer .footer-dark .links a p {
   font-size: 1.2em;
+  margin: 0;
 }
 
 footer .footer-dark .links a:hover {

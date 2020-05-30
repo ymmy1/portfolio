@@ -302,7 +302,6 @@ footer {
     background-size: cover;
     background-position: top top;
     background-attachment: fixed;
-    // padding: 2% 35% 0;
 
     .footer-dark
     {
@@ -310,7 +309,7 @@ footer {
         width: 100%;
 
         .links {
-            padding: 1% 40%;
+            padding: 30px 40%;
             color: #ffffff;
             display: flex;
             justify-content: space-around;
@@ -326,6 +325,7 @@ footer {
 
                 p {
                     font-size: 1.2em;
+                    margin: 0;
                 }
             }
 
