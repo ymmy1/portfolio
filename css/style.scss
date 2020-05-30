@@ -66,14 +66,26 @@ body {
 
 .navbar
 {
-    position: absolute;
-    top: 0;
-    right: 0;
     font-size: 20px;
 
+    .dropdown-menu
+     {
+        background: none;
+        a.dropdown-item:hover
+        {
+            background: none;
+        }
+     }   
+    .nav-social-link
+    {
+        padding-right: .3rem;
+        padding-left: .3rem;
+        color: rgba(0,0,0,0.5);
+    }
     a:hover
     {
         text-decoration: underline;
+        color: rgba(0,0,0,1);
     }
 }
 

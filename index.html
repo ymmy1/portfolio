@@ -20,30 +20,34 @@
 
 <body>
     <header id="home" class="noselect">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler ml-auto" data-target="#navbar" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ml-auto mt-2">
+                        <li class="nav-item ml-auto"><a class="nav-link" href="#" data-toggle="modal" data-target="#resume">Resume</a></li>
+                        <li class="nav-item ml-auto"><a class="nav-link" href="#" data-toggle="modal" data-target="#UW">University of Washington</a></li>
+                        <li class="nav-item dropdown ml-auto">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                CS50 by Harvard
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#CS50x" >CS50x by Harvard</a>
+                            </div>
+                          </li>
+                        
+                        <li class="nav-item ml-auto">
+                            <div class="nav-link">
+                                <a class="nav-social-link" href="https://github.com/ymmy1" target="_blank"><i class="fab fa-github-square"></i></a>
+                                <a class="nav-social-link" href="https://www.linkedin.com/in/oleg-nosyrev-440640114" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a class="nav-social-link" href="mailto:oleg.ymmy@gmail.com" target="_blank"><i class="fas fa-at"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+               </div>
+            </nav>
         <div class="container-birds">
-            <nav class="navbar navbar-expand-sm navbar-light">
-                <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar">
-                        <ul class="navbar-nav ml-auto mt-2">
-                            <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#resume">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#UW">University of Washington</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    CS50 by Harvard
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#CS50x" >CS50x by Harvard</a>
-                              </li>
-                            
-                            <!-- <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#CS50x" >CS50 by Harvard</a></li> -->
-                            <li class="nav-item"><a class="nav-link" href="https://github.com/ymmy1" target="_blank"><i class="fab fa-github-square"></i></a></li>
-                            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/oleg-nosyrev-440640114" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                            <li class="nav-item"><a class="nav-link" href="mailto:oleg.ymmy@gmail.com" target="_blank"><i class="fas fa-at"></i></a></li>
-                        </ul>
-                   </div>
-                </nav>
             <div class="title">
                 <h1 class="main-title">Front End Web Developer</h1>
                 <a href="https://maps.google.com/?q=Seattle" class="location" target="_blank">
