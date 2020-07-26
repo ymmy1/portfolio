@@ -227,6 +227,11 @@ button {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
+.projects-main .my-projects .project-block .languages span {
+  display: block;
+  margin: 5px 0;
+}
+
 .projects-main .my-projects .project-block .languages img {
   width: 100%;
 }
