@@ -149,7 +149,7 @@ button {
 
 .projects-main {
     text-align: center;
-    padding: 50px 10%;
+    padding: 50px 8%;
 
     h2 {
         margin: 0 0 20px 0;
@@ -190,7 +190,7 @@ button {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 420px;
+            width: 500px;
 
 
             h3 {
@@ -221,17 +221,15 @@ button {
                 }
                 ul
                 {
-                    display: flex;
-                    justify-content: space-around;
                     margin: 0;
                     padding: 0;
-                    flex-flow: column;
-                    align-items: center;
+                    display: flex;
                     li
                     {
                         display: flex;
                         align-items: center;
                         list-style: none;
+                        margin-right: 10px;
                         div
                         {
                             height: 10px;
