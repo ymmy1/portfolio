@@ -343,6 +343,7 @@ footer {
         height: 70px;
         display: flex;
         align-items: flex-end;
+        border-bottom: 1px solid #222222;
         .modal-logo
         {
             height: 100%;
@@ -359,6 +360,7 @@ footer {
     }
     .modal-footer
     {
+        border-top: 1px solid #222222;
         .btn
         {
             background-color: #900D35;

@@ -373,6 +373,7 @@ footer .footer-dark .links a:hover {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  border-bottom: 1px solid #222222;
 }
 
 .modal-dialog .modal-content .modal-header .modal-logo {
@@ -382,6 +383,10 @@ footer .footer-dark .links a:hover {
 
 .modal-dialog .modal-content .modal-body img {
   width: 100%;
+}
+
+.modal-dialog .modal-content .modal-footer {
+  border-top: 1px solid #222222;
 }
 
 .modal-dialog .modal-content .modal-footer .btn {
