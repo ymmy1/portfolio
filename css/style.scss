@@ -209,6 +209,61 @@ button {
                 -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
                 box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
             }
+
+            .hover_place
+            {
+                position: relative;
+                width: 500px;
+                .hover
+                {
+                    cursor: pointer;
+                    position: absolute;
+                    z-index: 1;
+                    opacity: 0;
+                    overflow: hidden;
+                    top: 0;
+                    background: rgba(34, 34, 34, 0.8);
+                    width: inherit;
+                    height: -webkit-fill-available;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.5s;
+                    ul
+                    {
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        li
+                        {
+                            list-style: none;
+                            padding: 0 20px;
+                            font-weight: bold;
+                            font-size: 1.6em;
+                            &:nth-child(2)
+                            {
+                                border-left: 1px solid white;
+                                border-right: 1px solid white;
+                            }
+                            a
+                            {
+                                color: rgba(250,250,250,0.8);
+                            }
+                            .disabled
+                            {   
+                                color: rgba(250,250,250,0.3);
+                                &:hover
+                                {
+                                    cursor: not-allowed;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                        
+                        
+                    }
+                }
+            }
             .languages
             {
                 span
