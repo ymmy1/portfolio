@@ -221,7 +221,7 @@ button {
   width: 100%;
 }
 
-.projects-main .my-projects .project-block video {
+.projects-main .my-projects .project-block video, .projects-main .my-projects .project-block .imge {
   border: 1px solid #000000;
   width: 100%;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -245,6 +245,13 @@ button {
       justify-content: space-around;
   margin: 0;
   padding: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projects-main .my-projects .project-block .languages ul li {
