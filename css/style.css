@@ -211,6 +211,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   width: 500px;
+  margin-bottom: 20px;
 }
 
 .projects-main .my-projects .project-block h3 {
@@ -750,6 +751,26 @@ footer .footer-dark .links a:hover {
   100% {
     -webkit-transform: translateY(0vh) translateX(110vw) scale(0.45);
             transform: translateY(0vh) translateX(110vw) scale(0.45);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .projects-main .my-projects .project-block {
+    width: 100%;
+  }
+  .projects-main .my-projects .project-block .hover_place {
+    width: 100%;
+  }
+  .projects-main .my-projects .project-block .languages ul {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 /*# sourceMappingURL=style.css.map */
