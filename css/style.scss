@@ -1,3 +1,5 @@
+$pink : #F5E7EA;
+
 /* scroll bar */
 ::-webkit-scrollbar {
   width: 0px;
@@ -131,7 +133,75 @@ body
     .about
     {
         text-align: center;
-        height: 400px;
+        height: 60vh;
+        position: relative;
+        padding: 20px 10px;
+        h2
+        {
+            font-family: 'Arima Madurai', cursive;
+            color: rgba(0, 0, 0, 0.7);
+            text-shadow: 0px 0px 5px #fafafa;
+            font-size: 3.5em;
+        }
+        .content
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .img
+            {
+                width: 400px;
+                img
+                {
+                    width: 100%;
+                }
+            }
+            .text
+            {
+                text-align: left;
+                white-space: wrap;
+                width: 60%;
+                font-size: 1.5em;
+                .skills
+                {
+                    display: flex;
+                    justify-content: center;
+                    .skill
+                    {
+                        width: 100px;
+                        margin-right: 3%;
+                        transition: transform .2s;
+                        cursor: pointer;
+                        
+                        img
+                        {
+                            width: 100%;
+                            filter: drop-shadow(3px 3px 3px #222);
+                        }
+                        &:hover
+                        {
+                            transform: scale(1.5)
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+        .leaf-right,.leaf-left
+        {
+            position: absolute;
+            width: 20%;
+            height: inherit;
+            right: 0;
+            top: 0;
+        }
+        .leaf-left
+        {
+            left: 0;
+        }
     }
     .projects-main 
     {
@@ -141,8 +211,10 @@ body
         h2 
         {
             margin: 0 0 20px 0;
-            font-size: 2.7em;
             font-family: 'Arima Madurai', cursive;
+            color: rgba(0, 0, 0, 0.7);
+            text-shadow: 0px 0px 5px #fafafa;
+            font-size: 3.5em;
         }
         .my-projects 
         {
@@ -242,6 +314,8 @@ body
                     img
                     {
                         width: 100%;
+                        height: 10px;
+                        border-radius: 50px;
                     }
                     ul
                     {
@@ -292,22 +366,24 @@ body
     }
     .contact-me
     {
-        padding: 20px;
+        padding: 0 20px;
         text-align: center;
         background-image: url("../img/sakura2.jpg");
         background-size: cover;
         background-position: center center;
         height: 85vh;
-        border-top: 10px solid #F5E7EA;
-        border-bottom: 10px solid #F5E7EA;
+        border-top: 10px solid $pink;
+        border-bottom: 10px solid $pink;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         h2
         {
-            font-size: 2.7em;
             font-family: 'Arima Madurai', cursive;
+            color: rgba(0, 0, 0, 0.7);
+            text-shadow: 0px 0px 5px #fafafa;
+            font-size: 3.5em;
         }
         form
         {
@@ -330,7 +406,7 @@ body
             button
             {
                 padding: 0.3em;
-                background-color: #F5E7EA;
+                background-color: $pink;
                 border-radius: 5px;
                 &:active
                 {
@@ -395,6 +471,17 @@ body
                     {
                         color: inherit;
                     }
+                    &::after
+                    {
+                        content:" | ";
+                        color: inherit;
+                        text-shadow: inherit;
+                        font-size: inherit;
+                    }
+                    &:last-child::after
+                    {
+                        content:"";
+                    }
                 }
             }
         }
@@ -439,7 +526,7 @@ body
         border-top: 1px solid #e1e1e1;
         .btn
         {
-            background-color: #F5E7EA;
+            background-color: $pink;
             color: rgba(0,0,0,0.5);
             &:hover
             {

@@ -135,7 +135,85 @@ body #sakura .container-leaf .title .small-title {
 
 body .about {
   text-align: center;
-  height: 400px;
+  height: 60vh;
+  position: relative;
+  padding: 20px 10px;
+}
+
+body .about h2 {
+  font-family: 'Arima Madurai', cursive;
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: 0px 0px 5px #fafafa;
+  font-size: 3.5em;
+}
+
+body .about .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .about .content .img {
+  width: 400px;
+}
+
+body .about .content .img img {
+  width: 100%;
+}
+
+body .about .content .text {
+  text-align: left;
+  white-space: wrap;
+  width: 60%;
+  font-size: 1.5em;
+}
+
+body .about .content .text .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .about .content .text .skills .skill {
+  width: 100px;
+  margin-right: 3%;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  cursor: pointer;
+}
+
+body .about .content .text .skills .skill img {
+  width: 100%;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+          filter: drop-shadow(3px 3px 3px #222);
+}
+
+body .about .content .text .skills .skill:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+body .about .leaf-right, body .about .leaf-left {
+  position: absolute;
+  width: 20%;
+  height: inherit;
+  right: 0;
+  top: 0;
+}
+
+body .about .leaf-left {
+  left: 0;
 }
 
 body .projects-main {
@@ -145,8 +223,10 @@ body .projects-main {
 
 body .projects-main h2 {
   margin: 0 0 20px 0;
-  font-size: 2.7em;
   font-family: 'Arima Madurai', cursive;
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: 0px 0px 5px #fafafa;
+  font-size: 3.5em;
 }
 
 body .projects-main .my-projects {
@@ -257,6 +337,8 @@ body .projects-main .my-projects .project-block .languages span {
 
 body .projects-main .my-projects .project-block .languages img {
   width: 100%;
+  height: 10px;
+  border-radius: 50px;
 }
 
 body .projects-main .my-projects .project-block .languages ul {
@@ -310,7 +392,7 @@ body .projects-main .my-projects .project-block .languages ul li .vue {
 }
 
 body .contact-me {
-  padding: 20px;
+  padding: 0 20px;
   text-align: center;
   background-image: url("../img/sakura2.jpg");
   background-size: cover;
@@ -334,8 +416,10 @@ body .contact-me {
 }
 
 body .contact-me h2 {
-  font-size: 2.7em;
   font-family: 'Arima Madurai', cursive;
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: 0px 0px 5px #fafafa;
+  font-size: 3.5em;
 }
 
 body .contact-me form {
@@ -441,6 +525,17 @@ body footer .footer-dark ul li div a {
 
 body footer .footer-dark ul li a {
   color: inherit;
+}
+
+body footer .footer-dark ul li::after {
+  content: " | ";
+  color: inherit;
+  text-shadow: inherit;
+  font-size: inherit;
+}
+
+body footer .footer-dark ul li:last-child::after {
+  content: "";
 }
 
 .modal-dialog {
