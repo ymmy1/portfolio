@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 
-    $('#contact-link').click(function(e) {
+    $('.contact-link').click(function(e) {
         e.preventDefault();
         $id = $(this).attr('href');
         $('body,html').animate({
