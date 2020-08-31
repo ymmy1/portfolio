@@ -281,6 +281,15 @@ body
                                     background: $pink;
                                 }
                             }
+                            .disabled
+                            {
+                                opacity: 0.2;
+                                cursor: not-allowed;
+                                &:hover
+                                {
+                                    background-color: #fafafa;
+                                }
+                            }
                         }
                     }
                     .languages

@@ -318,6 +318,15 @@ body .projects-main .my-projects .project-block .content .text ul li:hover {
   background: #F5E7EA;
 }
 
+body .projects-main .my-projects .project-block .content .text ul .disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+body .projects-main .my-projects .project-block .content .text ul .disabled:hover {
+  background-color: #fafafa;
+}
+
 body .projects-main .my-projects .project-block .content .languages {
   width: 100%;
   padding-top: 20px;
