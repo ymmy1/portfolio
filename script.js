@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
         }, 750);
     });
 
-    $('.hover_place').mouseenter( handlerIn ).mouseleave( handlerOut );
+    // $('.hover_place').mouseenter( handlerIn ).mouseleave( handlerOut );
 });
 
 function handlerIn () {
