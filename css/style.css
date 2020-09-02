@@ -220,6 +220,24 @@ body .about .leaf-left {
 body .projects-main {
   text-align: center;
   padding: 50px 8%;
+  position: relative;
+}
+
+body .projects-main .leaf-right, body .projects-main .leaf-left {
+  position: absolute;
+  width: 15%;
+  height: inherit;
+  right: 0;
+  top: 0;
+  height: 100%;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+body .projects-main .leaf-left {
+  left: 0;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 body .projects-main h2 {

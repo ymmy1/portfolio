@@ -94,7 +94,6 @@ body
         background-size: cover;
         background-position: center center;
         height: 100vh;
-        // clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 95%, 80% 90%, 70% 85%, 60% 80%, 50% 80%, 40% 80%, 30% 85%, 20% 90%, 10% 95%, 0 100%);
         .container-leaf 
         {
             margin: auto;
@@ -187,10 +186,6 @@ body
                 }
             }
         }
-
-
-
-
         .leaf-right,.leaf-left
         {
             position: absolute;
@@ -208,7 +203,23 @@ body
     {
         text-align: center;
         padding: 50px 8%;
-
+        position: relative;
+        .leaf-right,.leaf-left
+        {
+            position: absolute;
+            width: 15%;
+            height: inherit;
+            right: 0;
+            top: 0;
+            height: 100%;
+            transform: scaleX(-1)
+        }
+        .leaf-left
+        {
+            left: 0;
+            transform: scaleX(1)
+            
+        }
         h2 
         {
             margin: 0 0 20px 0;
@@ -222,7 +233,7 @@ body
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-
+            
             .project-block 
             {
                 display: flex;
