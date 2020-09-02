@@ -279,10 +279,10 @@ body .projects-main .my-projects .project-block {
 body .projects-main .my-projects .project-block .hover_place {
   position: relative;
   width: 35%;
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
+  -webkit-transition: -webkit-transform .6s;
+  transition: -webkit-transform .6s;
+  transition: transform .6s;
+  transition: transform .6s, -webkit-transform .6s;
   cursor: pointer;
 }
 
@@ -297,11 +297,58 @@ body .projects-main .my-projects .project-block .hover_place:hover {
           transform: scale(1.8);
 }
 
-body .projects-main .my-projects .project-block .content {
+body .projects-main .my-projects .project-block .flip-content {
   width: 50%;
+  height: 300px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  cursor: pointer;
 }
 
-body .projects-main .my-projects .project-block .content .text ul {
+body .projects-main .my-projects .project-block .flip-content:hover .flip-content-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front, body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-back {
+  background-image: -webkit-gradient(linear, left top, right top, from(#434343), to(black));
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  border-radius: 50px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-back ul {
   padding: 0;
   margin: 0;
   display: -webkit-box;
@@ -312,50 +359,55 @@ body .projects-main .my-projects .project-block .content .text ul {
           justify-content: center;
 }
 
-body .projects-main .my-projects .project-block .content .text ul li {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-back ul li {
   list-style: none;
   padding: 10px;
   border: 3px solid rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 14px 3px #f5e7ea;
+  box-shadow: 0px 0px 14px 3px #f5e7ea;
   border-radius: 50px;
   margin-right: 20px;
   -webkit-transition: .2s;
   transition: .2s;
+  font-size: 2em;
+  background: #fafafa;
+  cursor: pointer;
 }
 
-body .projects-main .my-projects .project-block .content .text ul li a {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-back ul li a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.5);
   font-weight: bold;
 }
 
-body .projects-main .my-projects .project-block .content .text ul li:last-child {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-back ul li:last-child {
   margin-right: 0px;
 }
 
-body .projects-main .my-projects .project-block .content .text ul li:hover {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-back ul li:hover {
   background: #F5E7EA;
 }
 
-body .projects-main .my-projects .project-block .content .text ul .disabled {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-back ul .disabled {
   opacity: 0.2;
   cursor: not-allowed;
 }
 
-body .projects-main .my-projects .project-block .content .text ul .disabled:hover {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-back ul .disabled:hover {
   background-color: #fafafa;
 }
 
-body .projects-main .my-projects .project-block .content .languages {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages {
   width: 100%;
   padding-top: 20px;
 }
 
-body .projects-main .my-projects .project-block .content .languages span {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages span {
   display: block;
   margin: 5px 0;
 }
 
-body .projects-main .my-projects .project-block .content .languages .skill-bar {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages .skill-bar {
   height: 20px;
   width: 100%;
   display: -webkit-box;
@@ -364,43 +416,43 @@ body .projects-main .my-projects .project-block .content .languages .skill-bar {
   margin-bottom: 15px;
 }
 
-body .projects-main .my-projects .project-block .content .languages .skill-bar div {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages .skill-bar div {
   height: inherit;
   border-right: 5px solid #e1e1e1;
 }
 
-body .projects-main .my-projects .project-block .content .languages .skill-bar div:first-child {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages .skill-bar div:first-child {
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
 }
 
-body .projects-main .my-projects .project-block .content .languages .skill-bar div:last-child {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages .skill-bar div:last-child {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   border: none;
 }
 
-body .projects-main .my-projects .project-block .content .languages .skill-bar .py {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages .skill-bar .py {
   background-color: #3572A5;
 }
 
-body .projects-main .my-projects .project-block .content .languages .skill-bar .html {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages .skill-bar .html {
   background-color: #E34C26;
 }
 
-body .projects-main .my-projects .project-block .content .languages .skill-bar .css {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages .skill-bar .css {
   background-color: #563D7C;
 }
 
-body .projects-main .my-projects .project-block .content .languages .skill-bar .js {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages .skill-bar .js {
   background-color: #F1E05A;
 }
 
-body .projects-main .my-projects .project-block .content .languages .skill-bar .vue {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages .skill-bar .vue {
   background-color: #2C3E50;
 }
 
-body .projects-main .my-projects .project-block .content .languages ul {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages ul {
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -411,7 +463,7 @@ body .projects-main .my-projects .project-block .content .languages ul {
           justify-content: center;
 }
 
-body .projects-main .my-projects .project-block .content .languages ul li {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,7 +474,7 @@ body .projects-main .my-projects .project-block .content .languages ul li {
   margin-right: 10px;
 }
 
-body .projects-main .my-projects .project-block .content .languages ul li div {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages ul li div {
   height: 10px;
   width: 10px;
   border-radius: 50%;
@@ -430,23 +482,23 @@ body .projects-main .my-projects .project-block .content .languages ul li div {
   margin-right: 10px;
 }
 
-body .projects-main .my-projects .project-block .content .languages ul li .py {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages ul li .py {
   background-color: #3572A5;
 }
 
-body .projects-main .my-projects .project-block .content .languages ul li .html {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages ul li .html {
   background-color: #E34C26;
 }
 
-body .projects-main .my-projects .project-block .content .languages ul li .css {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages ul li .css {
   background-color: #563D7C;
 }
 
-body .projects-main .my-projects .project-block .content .languages ul li .js {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages ul li .js {
   background-color: #F1E05A;
 }
 
-body .projects-main .my-projects .project-block .content .languages ul li .vue {
+body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-front .languages ul li .vue {
   background-color: #2C3E50;
 }
 
@@ -684,13 +736,13 @@ body footer .footer-dark ul li:last-child::after {
 }
 
 @media only screen and (max-width: 600px) {
-  .projects-main .my-projects .project-block {
+  .projects-main .my-projects .front-content .project-block {
     width: 100%;
   }
-  .projects-main .my-projects .project-block .hover_place {
+  .projects-main .my-projects .front-content .project-block .hover_place {
     width: 100%;
   }
-  .projects-main .my-projects .project-block .languages ul {
+  .projects-main .my-projects .front-content .project-block .languages ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
