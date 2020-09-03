@@ -2,7 +2,7 @@ $pink : #F5E7EA;
 
 /* scroll bar */
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 5px;
 }
 
 /* Track */
@@ -12,12 +12,12 @@ $pink : #F5E7EA;
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #900D35;
+  background: $pink;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #900D35;
+  background: $pink;
 }
 
 /* border-box */
@@ -43,18 +43,24 @@ $pink : #F5E7EA;
 }
 
 // Beginning of css
+html
+{
+    scroll-behavior: smooth;
+}
 body 
 {
-
+    
     margin: 0;
     padding: 0;
     background-color: #fafafa;
     color: #434343;
+    font-family: 'Lato', sans-serif;
     header
     {
         position: absolute;
         top: 0;
         width: 100%;
+        z-index: 2;
         .navbar
         {
             font-size: 20px;
@@ -127,14 +133,22 @@ body
                     font-size: 1.7em;
                 }
             }
+            #arrow-link
+            {
+                color: $pink;
+            }
         }
     }
     .about
     {
         text-align: center;
-        height: 60vh;
+        height: fit-content;
         position: relative;
         padding: 20px 10px;
+        // margin-top: 5%;
+        border-top: 15px solid #e1e1e1;
+        border-bottom: 15px solid #e1e1e1;
+        background: #f4f4f4;
         h2
         {
             font-family: 'Arima Madurai', cursive;
@@ -143,7 +157,8 @@ body
             font-size: 3.5em;
         }
         .content
-        {
+        {   
+            margin-top: 5%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -288,7 +303,6 @@ body
                           
                         .flip-content-back
                         {
-                            background-image: linear-gradient(to right, #434343 0%, black 100%);
                             border-radius: 50px;
                             transform: rotateY(180deg);
                             display: flex;
@@ -313,12 +327,13 @@ body
                                     margin-right: 20px;
                                     transition: .2s;
                                     font-size: 2em;
-                                    background: #fafafa;
+                                    
                                     cursor: pointer;
                                     a
                                     {
                                         text-decoration: none;
-                                        color: rgba(0,0,0,0.5);
+                                        color: #fafafa;
+                                        text-shadow: 0px 0px 5px #000000;
                                         font-weight: bold;
                                     }
                                     &:last-child
@@ -327,7 +342,7 @@ body
                                     }
                                     &:hover
                                     {
-                                        background: $pink;
+                                        background: rgba(#fafafa, 0.8);
                                     }
                                 }
                                 .disabled
@@ -343,13 +358,21 @@ body
                         }
                         .flip-content-front
                         {
+                            .text
+                            {
+                                h3
+                                {
+                                    font-size: 2.5em;
+                                }
+                            }
                             .languages
                             {
                                 width: 100%;
-                                padding-top: 20px;
                                 span
                                 {   display: block;
                                     margin: 5px 0;
+                                    font-weight: bold;
+                                    font-size: 1.2em;
                                 }
                                 .skill-bar
                                 {
@@ -407,6 +430,7 @@ body
                                         align-items: center;
                                         list-style: none;
                                         margin-right: 10px;
+                                        font-weight: bold;
                                         div
                                         {
                                             height: 10px;
@@ -438,7 +462,34 @@ body
                                     }
                                 }
                             }
-    
+                        }
+                        #flackychat-flip
+                        {
+                            background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 100%);
+                        }
+                        #bookreview-flip
+                        {
+                            background-image: linear-gradient(to right, #ffb330 0%, #fffcce 100%);
+                        }
+                        #mail-flip
+                        {
+                            background-image: linear-gradient(to right, #353a5f 0%, #9ebaf3 100%);
+                        }
+                        #bloggergram-flip
+                        {
+                            background-image: linear-gradient(to right, #6fc3f7 0%, #c2fdff 100%);
+                        }
+                        #trading-flip
+                        {
+                            background-image: linear-gradient(to right, #fc210d 0%, #f7ce38 100%);
+                        }
+                        #futureworld-flip
+                        {
+                            background-image: linear-gradient(to right, #0a8270 0%, #7cff6b 100%);
+                        }
+                        #wiki-flip
+                        {
+                            background-image: linear-gradient(to right, #112d60 0%, #b6c0c5 100%);
                         }
                         
                     }
@@ -634,54 +685,101 @@ body
     // left: 0;
     // right: 0;
     // bottom: 0;
-    pointer-events: none;
+    // pointer-events: none;
     background-image: url('http://www.mcctours.com.my/wp-content/uploads/2018/01/sakura-1-1.png'), url('http://www.mcctours.com.my/wp-content/uploads/2018/01/sakura-2.png');
      animation: snow 20s linear infinite;
  }
- 
  @keyframes snow {
-  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
- }
- 
- @media (max-width: 768px) {
-     .woocommerce ul.products li.product, 
-     .woocommerce-page ul.products li.product, 
-     .woocommerce-page[class*=columns-] ul.products li.product,
-     .woocommerce[class*=columns-] ul.products li.product {
-         width: 100%;
-         float: left;
-         clear: both;
-         margin: 0 7em;
-     }
- }
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+   }
+   
+   @media (max-width: 768px) {
+       .woocommerce ul.products li.product, 
+       .woocommerce-page ul.products li.product, 
+       .woocommerce-page[class*=columns-] ul.products li.product,
+       .woocommerce[class*=columns-] ul.products li.product {
+           width: 100%;
+           float: left;
+           clear: both;
+           margin: 0 7em;
+       }
+   }
+  
+   // End Snow
+   
+// scroll button
+  #arrow-link {
+    position: absolute;
+    bottom: 2px;
+    left: 49%;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+  }
+  #arrow-link:hover {
+    opacity: .5;
+  }
 
- // End Snow
-@media only screen and (max-width: 600px)
-{
-    .projects-main { 
-        .my-projects {
-            .front-content{
-
-                .project-block
-                {
-                    width: 100%;
-                    .hover_place
-                    {
-                        width: 100%;
-                    }
-                    .languages
-                    {
-                        ul
-                        {
-                            align-items: center;
-                            flex-flow: column;
-                            flex-wrap: wrap;
-                        }
-                    }
-                }
-            }
-        }
+  #arrow-link {
+    padding-top: 80px;
+  }
+  #arrow-link span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb07 2s infinite;
+    animation: sdb07 2s infinite;
+    opacity: 0;
+    box-sizing: border-box;
+  }
+  #arrow-link span:nth-of-type(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+  }
+  #arrow-link span:nth-of-type(2) {
+    top: 16px;
+    -webkit-animation-delay: .15s;
+    animation-delay: .15s;
+  }
+  #arrow-link span:nth-of-type(3) {
+    top: 32px;
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+  }
+  @-webkit-keyframes sdb07 {
+    0% {
+      opacity: 0;
     }
-}
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes sdb07 {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+// arrow ends
