@@ -42,6 +42,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -150,8 +151,6 @@ body .about {
   height: fit-content;
   position: relative;
   padding: 20px 10px;
-  border-top: 15px solid #e1e1e1;
-  border-bottom: 15px solid #e1e1e1;
   background: #f4f4f4;
 }
 
@@ -163,44 +162,45 @@ body .about h2 {
 }
 
 body .about .content {
-  margin-top: 5%;
+  border-top: 15px solid #e1e1e1;
+  border-bottom: 15px solid #e1e1e1;
+  padding: 20px 0;
+}
+
+body .about .content #carouselExampleIndicators {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 60px 0;
+  height: 250px;
+}
+
+body .about .content #carouselExampleIndicators .carousel-indicators li {
+  background-color: #c03e3e;
+}
+
+body .about .content #carouselExampleIndicators .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23c03e3e' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+body .about .content #carouselExampleIndicators .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23c03e3e' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+body .about .content #carouselExampleIndicators .carousel-inner {
+  overflow: inherit;
+}
+
+body .about .content .skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-body .about .content .img {
-  width: 350px;
-}
-
-body .about .content .img img {
-  width: 100%;
-}
-
-body .about .content .text {
-  text-align: left;
-  white-space: wrap;
-  width: 60%;
-  font-size: 1.5em;
-  text-align: center;
-}
-
-body .about .content .text .skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-body .about .content .text .skills .skill {
+body .about .content .skills .skill {
   width: 100px;
   margin-right: 3%;
   -webkit-transition: -webkit-transform .2s;
@@ -210,13 +210,13 @@ body .about .content .text .skills .skill {
   cursor: pointer;
 }
 
-body .about .content .text .skills .skill img {
+body .about .content .skills .skill img {
   width: 100%;
   -webkit-filter: drop-shadow(3px 3px 3px #222);
           filter: drop-shadow(3px 3px 3px #222);
 }
 
-body .about .content .text .skills .skill:hover {
+body .about .content .skills .skill:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
@@ -224,9 +224,10 @@ body .about .content .text .skills .skill:hover {
 body .about .leaf-right, body .about .leaf-left {
   position: absolute;
   width: 20%;
-  height: inherit;
+  height: -webkit-fill-available;
   right: 0;
   top: 0;
+  z-index: 0;
 }
 
 body .about .leaf-left {

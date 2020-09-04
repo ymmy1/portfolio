@@ -46,6 +46,7 @@ $pink : #F5E7EA;
 html
 {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body 
 {
@@ -146,8 +147,7 @@ body
         position: relative;
         padding: 20px 10px;
         // margin-top: 5%;
-        border-top: 15px solid #e1e1e1;
-        border-bottom: 15px solid #e1e1e1;
+        
         background: #f4f4f4;
         h2
         {
@@ -158,45 +158,59 @@ body
         }
         .content
         {   
-            margin-top: 5%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .img
+            border-top: 15px solid #e1e1e1;
+            border-bottom: 15px solid #e1e1e1;
+            padding: 20px 0;
+            #carouselExampleIndicators
             {
-                width: 350px;
-                img
+                height: fit-content;
+                padding: 60px 0;
+                height: 250px;
+                .carousel-indicators
                 {
-                    width: 100%;
+                    li
+                    {
+                        background-color: #c03e3e;
+                    }
+                }
+                .carousel-control-prev
+                {
+                    &-icon
+                    {
+                        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23c03e3e' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+                    }
+                }
+                .carousel-control-next
+                {
+                    &-icon
+                    {
+                        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23c03e3e' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+                    }
+                }
+                .carousel-inner
+                {
+                    overflow: inherit;
                 }
             }
-            .text
+            .skills
             {
-                text-align: left;
-                white-space: wrap;
-                width: 60%;
-                font-size: 1.5em;
-                text-align: center;
-                .skills
+                display: flex;
+                justify-content: center;
+                .skill
                 {
-                    display: flex;
-                    justify-content: center;
-                    .skill
+                    width: 100px;
+                    margin-right: 3%;
+                    transition: transform .2s;
+                    cursor: pointer;
+                    
+                    img
                     {
-                        width: 100px;
-                        margin-right: 3%;
-                        transition: transform .2s;
-                        cursor: pointer;
-                        
-                        img
-                        {
-                            width: 100%;
-                            filter: drop-shadow(3px 3px 3px #222);
-                        }
-                        &:hover
-                        {
-                            transform: scale(1.5)
-                        }
+                        width: 100%;
+                        filter: drop-shadow(3px 3px 3px #222);
+                    }
+                    &:hover
+                    {
+                        transform: scale(1.5)
                     }
                 }
             }
@@ -205,9 +219,10 @@ body
         {
             position: absolute;
             width: 20%;
-            height: inherit;
+            height: -webkit-fill-available;
             right: 0;
             top: 0;
+            z-index: 0;
         }
         .leaf-left
         {
