@@ -140,6 +140,10 @@ body #sakura .container-leaf .title .small-title {
   font-size: 1.7em;
 }
 
+body #sakura .container-leaf .title .ml5 {
+  opacity: 0;
+}
+
 body #sakura .container-leaf #arrow-link {
   color: #F5E7EA;
 }
@@ -171,8 +175,8 @@ body .about .content #carouselExampleIndicators {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 60px 0;
-  height: 250px;
+  padding: 10px 0 0 0;
+  height: 200px;
 }
 
 body .about .content #carouselExampleIndicators .carousel-indicators li {
@@ -208,6 +212,11 @@ body .about .content .skills .skill {
   transition: transform .2s;
   transition: transform .2s, -webkit-transform .2s;
   cursor: pointer;
+}
+
+body .about .content .skills .skill p {
+  font-weight: bold;
+  font-size: 0.8em;
 }
 
 body .about .content .skills .skill img {

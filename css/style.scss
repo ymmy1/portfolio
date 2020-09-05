@@ -133,6 +133,10 @@ body
                 {
                     font-size: 1.7em;
                 }
+                .ml5
+                {
+                    opacity: 0;
+                }
             }
             #arrow-link
             {
@@ -164,8 +168,8 @@ body
             #carouselExampleIndicators
             {
                 height: fit-content;
-                padding: 60px 0;
-                height: 250px;
+                padding: 10px 0 0 0;
+                height: 200px;
                 .carousel-indicators
                 {
                     li
@@ -202,7 +206,11 @@ body
                     margin-right: 3%;
                     transition: transform .2s;
                     cursor: pointer;
-                    
+                    p
+                    {
+                        font-weight: bold;
+                        font-size: 0.8em;
+                    }
                     img
                     {
                         width: 100%;
