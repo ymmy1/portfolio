@@ -1,12 +1,11 @@
 // Wrap every letter in a span
 $( document ).ready(function() {
-    
-    setTimeout(function(){ navBarAnimate()}, 300);
-    setTimeout(function(){ frontEndTitle();}, 500);
-    setTimeout(function(){ OlegNosyrevTitle()}, 1500);
-    setTimeout(function(){ locationTitle()}, 2200);
-    
-    setTimeout(function(){ scrollAnimate()}, 4000);
+    var offSet = 1200
+    setTimeout(function(){ navBarAnimate()}, offSet + 300);
+    setTimeout(function(){ frontEndTitle();}, offSet + 500);
+    setTimeout(function(){ OlegNosyrevTitle()}, offSet + 1500);
+    setTimeout(function(){ locationTitle()}, offSet + 2200);
+    setTimeout(function(){ scrollAnimate()}, offSet + 3800);
 });
 
 function sendMail() {
