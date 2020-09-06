@@ -10,12 +10,12 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #F5E7EA;
+  background: #ffb9c8;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #F5E7EA;
+  background: #ffb9c8;
 }
 
 /* border-box */
@@ -62,6 +62,12 @@ body header {
 
 body header .navbar {
   font-size: 20px;
+  opacity: 0;
+}
+
+body header .navbar .nav-link {
+  color: #fafafa !important;
+  text-shadow: 0px 0px 5px black;
 }
 
 body header .navbar .dropdown-menu {
@@ -69,7 +75,8 @@ body header .navbar .dropdown-menu {
 }
 
 body header .navbar .dropdown-menu a.dropdown-item {
-  color: rgba(0, 0, 0, 0.5);
+  color: #fafafa;
+  text-shadow: 0px 0px 5px black;
 }
 
 body header .navbar .dropdown-menu a.dropdown-item:hover {
@@ -80,7 +87,8 @@ body header .navbar .dropdown-menu a.dropdown-item:hover {
 body header .navbar .nav-social-link {
   padding-right: .3rem;
   padding-left: .3rem;
-  color: rgba(0, 0, 0, 0.5);
+  color: #fafafa;
+  text-shadow: 0px 0px 5px black;
 }
 
 body header .navbar a:hover {
@@ -133,19 +141,54 @@ body #sakura .container-leaf .title {
 body #sakura .container-leaf .title .main-title {
   font-size: 5em;
   padding: 0;
-  margin: 0;
+  margin: 10px 0 0 0;
 }
 
 body #sakura .container-leaf .title .small-title {
   font-size: 1.7em;
-}
-
-body #sakura .container-leaf .title .ml5 {
   opacity: 0;
 }
 
+body #sakura .container-leaf .title .ml14 {
+  text-transform: uppercase;
+  font-weight: 600;
+  opacity: 0;
+}
+
+body #sakura .container-leaf .title .ml14 .letter {
+  display: inline-block;
+}
+
+body #sakura .container-leaf .title .ml16 {
+  margin-top: 15px;
+  display: block;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  opacity: 0;
+  color: inherit;
+  text-shadow: inherit;
+}
+
+body #sakura .container-leaf .title .ml16 i {
+  color: #ffb9c8;
+}
+
+body #sakura .container-leaf .title .ml16:hover span {
+  display: inline-block;
+  -webkit-text-decoration: line;
+          text-decoration: line;
+}
+
+body #sakura .container-leaf .title .ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
 body #sakura .container-leaf #arrow-link {
-  color: #F5E7EA;
+  opacity: 0;
+  color: #fafafa;
+  text-shadow: 0px 0px 5px black;
 }
 
 body .about {
@@ -574,8 +617,8 @@ body .contact-me {
   background-size: cover;
   background-position: center center;
   height: 85vh;
-  border-top: 10px solid #F5E7EA;
-  border-bottom: 10px solid #F5E7EA;
+  border-top: 10px solid #ffb9c8;
+  border-bottom: 10px solid #ffb9c8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -624,7 +667,7 @@ body .contact-me form textarea {
 
 body .contact-me form button {
   padding: 0.3em;
-  background-color: #F5E7EA;
+  background-color: #ffb9c8;
   border-radius: 5px;
 }
 
@@ -705,7 +748,7 @@ body footer .footer-dark ul li a {
 
 body footer .footer-dark ul li::after {
   content: " | ";
-  color: inherit;
+  color: #ffb9c8;
   text-shadow: inherit;
   font-size: inherit;
 }
@@ -747,7 +790,7 @@ body footer .footer-dark ul li:last-child::after {
 }
 
 .modal-dialog .modal-content .modal-footer .btn {
-  background-color: #F5E7EA;
+  background-color: #ffb9c8;
   color: rgba(0, 0, 0, 0.5);
 }
 

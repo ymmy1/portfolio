@@ -1,8 +1,12 @@
 // Wrap every letter in a span
 $( document ).ready(function() {
     
-    goodMorningTitle();
-    setTimeout(function(){ frontEndTitle()}, 3000);
+    
+    setTimeout(function(){ frontEndTitle();}, 500);
+    setTimeout(function(){ OlegNosyrevTitle()}, 1500);
+    setTimeout(function(){ locationTitle()}, 2200);
+    setTimeout(function(){ navBarAnimate()}, 4000);
+    setTimeout(function(){ scrollAnimate()}, 4000);
 });
 
 function sendMail() {
@@ -15,12 +19,12 @@ function sendMail() {
     window.location.href = link;
 }
 
-// Good Morning Animate\
-function goodMorningTitle()
+// Good Morning Animate
+function frontEndTitle()
 {
     var textWrapper = document.querySelector('.ml3');
-        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-    
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    textWrapper.style.opacity = "1"
         anime.timeline({loop: false})
         .add({
             targets: '.ml3 .letter',
@@ -36,25 +40,86 @@ function goodMorningTitle()
             delay: 1000
         });
 }
-
-// Front End Developer Animate
-function frontEndTitle()
+// Oleg Nosyrev Animate
+function OlegNosyrevTitle()
 {
-    var textWrapper = document.querySelector('.ml5');
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.ml14');
     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
     textWrapper.style.opacity = "1"
     anime.timeline({loop: false})
     .add({
-        targets: '.ml5 .letter',
+        targets: '.ml14 .letter',
+        translateY: [100,0],
+        translateZ: 0,
         opacity: [0,1],
-        easing: "easeInOutQuad",
-        duration: 250,
-        delay: (el, i) => 50 * (i+1)
-    }).add({
-        targets: '.ml5',
-        opacity: 1,
-        duration: 1000,
         easing: "easeOutExpo",
-        delay: 1000
+        duration: 1400,
+        delay: (el, i) => 300 + 30 * i
+    }).add({
+        targets: '.ml14 .letter',
+        translateY: [0,0],
+        opacity: [1,1],
+        translateZ: 1,
+        easing: "easeInExpo",
+        duration: 1200,
+        delay: (el, i) => 100 + 30 * i
     });
+}
+// Location Animate
+function locationTitle()
+{
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.ml16');
+    var icon = `<i class="fas fa-map-marker-alt letter"></i>`
+    textWrapper.innerHTML = icon + textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    textWrapper.style.opacity = "1"
+    anime.timeline({loop: false})
+    .add({
+        targets: '.ml16 .letter',
+        translateX: [40,0],
+        translateZ: 0,
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 1200,
+        delay: (el, i) => 500 + 30 * i
+    }).add({
+        targets: '.ml16 .letter',
+        translateX: [0,0],
+        opacity: [1,1],
+        easing: "easeInExpo",
+        duration: 1100,
+        delay: (el, i) => 100 + 30 * i
+    });
+    setTimeout(function(){ textWrapper.innerHTML = icon + textWrapper.textContent.replace(/\S/g, "$&");}, 1500);
+    
+}
+
+// navBar animate
+function navBarAnimate()
+{
+    var textWrapper = document.querySelector('.navbar');
+    
+    anime.timeline({loop: false})
+    .add({
+        targets: '.navbar',
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 1400,
+        delay: (el, i) => 300 + 30 * i
+    })
+}
+
+function scrollAnimate()
+{
+    var textWrapper = document.querySelector('#arrow-link');
+    textWrapper.style.opacity = "1";
+    anime.timeline({loop: false})
+    .add({
+        targets: '#arrow-link',
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 1400,
+        delay: (el, i) => 300 + 30 * i
+    })
 }
