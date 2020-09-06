@@ -1,11 +1,11 @@
 // Wrap every letter in a span
 $( document ).ready(function() {
     
-    
+    setTimeout(function(){ navBarAnimate()}, 300);
     setTimeout(function(){ frontEndTitle();}, 500);
     setTimeout(function(){ OlegNosyrevTitle()}, 1500);
     setTimeout(function(){ locationTitle()}, 2200);
-    setTimeout(function(){ navBarAnimate()}, 4000);
+    
     setTimeout(function(){ scrollAnimate()}, 4000);
 });
 
