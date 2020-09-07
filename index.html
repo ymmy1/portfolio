@@ -16,6 +16,7 @@
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ocean.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -27,6 +28,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav m-auto mt-2">
+                    <li class="nav-item ml-auto"><button id="sakura-btn" class="nav-link theme" data-page="sakura">Sakura Theme</button></li>
                     <li class="nav-item ml-auto"><a class="nav-link contact-link" href="#my-projects">My Projects</a></li>
                     <li class="nav-item ml-auto"><a class="nav-link" href="img/certificates/Oleg_Nosyrev_Front_End_Portfolio.pdf" target="_blank">Resume</a></li>
                     <li class="nav-item ml-auto"><a class="nav-link" href="#" data-toggle="modal" data-target="#UW">University of Washington</a></li>
@@ -38,7 +40,7 @@
                             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#CS50x" >CS50x by Harvard</a>
                             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#CS50w" >Web Programming by Harvard</a>
                         </div>
-                        </li>
+                    </li>
                     
                     <li class="nav-item ml-auto">
                         <div class="nav-link">
@@ -47,15 +49,28 @@
                             <a id="contact-link" class="nav-social-link contact-link" href="#contact-me"><i class="fas fa-at"></i></a>
                         </div>
                     </li>
+                    <li class="nav-item ml-auto"><button id="ocean-btn" class="nav-link theme" data-page="ocean">Ocean Theme</button></li>
                 </ul>
             </div>
         </nav>
     </header>
     <section id="sakura" class="noselect">
-        <div class="container-leaf snow-bg">
+        <div id="theme_change" class="container-leaf">
+            <div class="bird-container bird-container--one">
+                <div class="bird bird--one"></div>
+            </div>
+            <div class="bird-container bird-container--two">
+                <div class="bird bird--two"></div>
+            </div>
+            <div class="bird-container bird-container--three">
+                <div class="bird bird--three"></div>
+            </div>
+            <div class="bird-container bird-container--four">
+                <div class="bird bird--four"></div>
+            </div>
             <div class="title ">
                 <span class="small-title ml3">Front&nbsp;End&nbsp;Web&nbsp;Developer</span>
-                <h1 class="main-title ml14">Oleg&nbsp;Nosyrev</h1>
+                <h1 class="main-title ml14">Oleg Nosyrev</h1>
                 <a href="https://maps.google.com/?q=Seattle" class="ml16" target="_blank">
                     <i class="fas fa-map-marker-alt letter"></i>
                     Seattle, Washington, USA
@@ -68,6 +83,20 @@
                     <span></span>
                     Scroll
                 </a>
+            </div>
+            <div id="the_waves">
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(119,187,232,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(119,187,232,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(119,187,232,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(119,187,232,1)" />
+                </g>
+                </svg>
             </div>
         </div>
     </section>

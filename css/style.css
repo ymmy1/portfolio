@@ -8,16 +8,6 @@
   background: #222222;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #ffb9c8;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #ffb9c8;
-}
-
 /* border-box */
 *,
 *::before,
@@ -65,6 +55,23 @@ body header .navbar {
   opacity: 0;
 }
 
+body header .navbar #sakura-btn {
+  background-image: url("../img/sakura2in2.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+body header .navbar #ocean-btn {
+  background-image: url("../img/ocean-1.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+body header .navbar #sakura-btn:active, body header .navbar #ocean-btn:active {
+  position: relative;
+  top: 5px;
+}
+
 body header .navbar .nav-link {
   color: #fafafa !important;
   text-shadow: 0px 0px 5px black;
@@ -98,11 +105,11 @@ body header .navbar a:hover {
 body #sakura {
   margin: auto;
   width: 100%;
-  background-image: url("../img/sakura2in2.jpg"), -webkit-gradient(linear, left top, left bottom, from(#D0E5F3), to(#B7D7EC));
-  background-image: url("../img/sakura2in2.jpg"), linear-gradient(#D0E5F3, #B7D7EC);
   background-size: cover;
   background-position: center center;
   height: 100vh;
+  -webkit-transition: 5s;
+  transition: 5s;
 }
 
 body #sakura .container-leaf {
@@ -167,10 +174,6 @@ body #sakura .container-leaf .title .ml16 {
   opacity: 0;
   color: inherit;
   text-shadow: inherit;
-}
-
-body #sakura .container-leaf .title .ml16 i {
-  color: #ffb9c8;
 }
 
 body #sakura .container-leaf .title .ml16:hover span {
@@ -450,10 +453,6 @@ body .projects-main .my-projects .project-block .flip-content .flip-content-inne
   margin-right: 0px;
 }
 
-body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-back ul li:hover {
-  background: rgba(250, 250, 250, 0.8);
-}
-
 body .projects-main .my-projects .project-block .flip-content .flip-content-inner .flip-content-back ul .disabled {
   opacity: 0.2;
   cursor: not-allowed;
@@ -574,50 +573,12 @@ body .projects-main .my-projects .project-block .flip-content .flip-content-inne
   background-color: #2C3E50;
 }
 
-body .projects-main .my-projects .project-block .flip-content .flip-content-inner #flackychat-flip {
-  background-image: -webkit-gradient(linear, left top, right top, from(#fbc2eb), to(#a6c1ee));
-  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 100%);
-}
-
-body .projects-main .my-projects .project-block .flip-content .flip-content-inner #bookreview-flip {
-  background-image: -webkit-gradient(linear, left top, right top, from(#ffb330), to(#fffcce));
-  background-image: linear-gradient(to right, #ffb330 0%, #fffcce 100%);
-}
-
-body .projects-main .my-projects .project-block .flip-content .flip-content-inner #mail-flip {
-  background-image: -webkit-gradient(linear, left top, right top, from(#353a5f), to(#9ebaf3));
-  background-image: linear-gradient(to right, #353a5f 0%, #9ebaf3 100%);
-}
-
-body .projects-main .my-projects .project-block .flip-content .flip-content-inner #bloggergram-flip {
-  background-image: -webkit-gradient(linear, left top, right top, from(#6fc3f7), to(#c2fdff));
-  background-image: linear-gradient(to right, #6fc3f7 0%, #c2fdff 100%);
-}
-
-body .projects-main .my-projects .project-block .flip-content .flip-content-inner #trading-flip {
-  background-image: -webkit-gradient(linear, left top, right top, from(#fc210d), to(#f7ce38));
-  background-image: linear-gradient(to right, #fc210d 0%, #f7ce38 100%);
-}
-
-body .projects-main .my-projects .project-block .flip-content .flip-content-inner #futureworld-flip {
-  background-image: -webkit-gradient(linear, left top, right top, from(#0a8270), to(#7cff6b));
-  background-image: linear-gradient(to right, #0a8270 0%, #7cff6b 100%);
-}
-
-body .projects-main .my-projects .project-block .flip-content .flip-content-inner #wiki-flip {
-  background-image: -webkit-gradient(linear, left top, right top, from(#112d60), to(#b6c0c5));
-  background-image: linear-gradient(to right, #112d60 0%, #b6c0c5 100%);
-}
-
 body .contact-me {
   padding: 0 20px;
   text-align: center;
-  background-image: url("../img/sakura2.jpg");
   background-size: cover;
   background-position: center center;
   height: 85vh;
-  border-top: 10px solid #ffb9c8;
-  border-bottom: 10px solid #ffb9c8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -666,7 +627,6 @@ body .contact-me form textarea {
 
 body .contact-me form button {
   padding: 0.3em;
-  background-color: #ffb9c8;
   border-radius: 5px;
 }
 
@@ -747,7 +707,6 @@ body footer .footer-dark ul li a {
 
 body footer .footer-dark ul li::after {
   content: " | ";
-  color: #ffb9c8;
   text-shadow: inherit;
   font-size: inherit;
 }
@@ -789,7 +748,6 @@ body footer .footer-dark ul li:last-child::after {
 }
 
 .modal-dialog .modal-content .modal-footer .btn {
-  background-color: #ffb9c8;
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -844,7 +802,7 @@ body footer .footer-dark ul li:last-child::after {
 #arrow-link {
   position: absolute;
   bottom: 2px;
-  left: 49%;
+  left: calc((100% - 62px) / 2);
   display: inline-block;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
@@ -920,6 +878,84 @@ body footer .footer-dark ul li:last-child::after {
   }
   100% {
     opacity: 0;
+  }
+}
+
+#the_waves {
+  z-index: -1;
+  width: 120%;
+}
+
+#the_waves .waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -16px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+#the_waves .parallax > use {
+  -webkit-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+          animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+#the_waves .parallax > use:nth-child(1) {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+
+#the_waves .parallax > use:nth-child(2) {
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+#the_waves .parallax > use:nth-child(3) {
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+}
+
+#the_waves .parallax > use:nth-child(4) {
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+
+@-webkit-keyframes move-forever {
+  0% {
+    -webkit-transform: translate3d(-90px, 0, 0);
+            transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(85px, 0, 0);
+            transform: translate3d(85px, 0, 0);
+  }
+}
+
+@keyframes move-forever {
+  0% {
+    -webkit-transform: translate3d(-90px, 0, 0);
+            transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(85px, 0, 0);
+            transform: translate3d(85px, 0, 0);
+  }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */

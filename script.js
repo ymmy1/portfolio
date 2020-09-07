@@ -1,11 +1,38 @@
 // Wrap every letter in a span
 $( document ).ready(function() {
-    var offSet = 1200
-    setTimeout(function(){ navBarAnimate()}, offSet + 300);
+    var offSet = 1700
+    setTimeout(function(){ navBarAnimate()}, offSet + 900);
     setTimeout(function(){ frontEndTitle();}, offSet + 500);
     setTimeout(function(){ OlegNosyrevTitle()}, offSet + 1500);
     setTimeout(function(){ locationTitle()}, offSet + 2200);
     setTimeout(function(){ scrollAnimate()}, offSet + 3800);
+
+    document.querySelectorAll('.theme').forEach(link => {
+        link.onclick = () => {
+        
+            // changing css file
+            var oldlink = document.getElementsByTagName("link").item(5);
+        
+            var newlink = document.createElement("link");
+            newlink.setAttribute("rel", "stylesheet");
+            newlink.setAttribute("type", "text/css");
+            newlink.setAttribute("href", `/css/${link.dataset.page}.css`);
+            
+            // adding/removing leafs
+            if(link.dataset.page == "ocean")
+            {
+                document.getElementById("theme_change").className = "container-leaf";
+            }
+            else
+            {
+                document.getElementById("theme_change").className = "container-leaf snow-bg";
+            }
+
+            // conclusion
+            document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+            
+            }
+    });
 });
 
 function sendMail() {
@@ -38,6 +65,7 @@ function frontEndTitle()
             easing: "easeOutExpo",
             delay: 1000
         });
+        setTimeout(function(){ textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "$&");}, 1500);
 }
 // Oleg Nosyrev Animate
 function OlegNosyrevTitle()
@@ -64,6 +92,7 @@ function OlegNosyrevTitle()
         duration: 1200,
         delay: (el, i) => 100 + 30 * i
     });
+    setTimeout(function(){ textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "$&");}, 1500);
 }
 // Location Animate
 function locationTitle()

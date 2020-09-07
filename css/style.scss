@@ -1,4 +1,5 @@
-$pink : #ffb9c8;
+// $theme_color : #ffb9c8;
+// $theme_color : rgba(119,187,232,1)ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
 
 /* scroll bar */
 ::-webkit-scrollbar {
@@ -10,15 +11,15 @@ $pink : #ffb9c8;
     background: #222222;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: $pink;
-}
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//   background: $theme_color;
+// }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: $pink;
-}
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: $theme_color;
+// }
 
 /* border-box */
 *,
@@ -66,6 +67,26 @@ body
         {
             font-size: 20px;
             opacity: 0;
+            #sakura-btn
+            {
+                background-image: url('../img/sakura2in2.jpg');
+                background-size: cover;
+                background-position: center center;
+            }
+            #ocean-btn
+            {
+                background-image: url('../img/ocean-1.jpg');
+                background-size: cover;
+                background-position: center center;
+            }
+            #sakura-btn, #ocean-btn
+            {
+                &:active
+                {
+                    position:relative;
+                    top:5px;
+                }
+            }
             .nav-link
             {
                 color: rgb(250,250,250) !important;
@@ -104,10 +125,11 @@ body
     {
         margin: auto;
         width: 100%;
-        background-image: url('../img/sakura2in2.jpg'), linear-gradient(#D0E5F3, #B7D7EC);
+        // background-image: url('../img/ocean-1.jpg'), linear-gradient(#D0E5F3, #B7D7EC);
         background-size: cover;
         background-position: center center;
         height: 100vh;
+        transition: 5s;
         .container-leaf 
         {
             margin: auto;
@@ -167,10 +189,10 @@ body
 
                     color: inherit;
                     text-shadow: inherit;
-                    i
-                    {
-                        color: $pink;
-                    }
+                    // i
+                    // {
+                    //     color: $theme_color;
+                    // }
                     &:hover
                     {
                         span
@@ -414,10 +436,6 @@ body
                                     {
                                         margin-right: 0px;
                                     }
-                                    &:hover
-                                    {
-                                        background: rgba(#fafafa, 0.8);
-                                    }
                                 }
                                 .disabled
                                 {
@@ -537,35 +555,6 @@ body
                                 }
                             }
                         }
-                        #flackychat-flip
-                        {
-                            background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 100%);
-                        }
-                        #bookreview-flip
-                        {
-                            background-image: linear-gradient(to right, #ffb330 0%, #fffcce 100%);
-                        }
-                        #mail-flip
-                        {
-                            background-image: linear-gradient(to right, #353a5f 0%, #9ebaf3 100%);
-                        }
-                        #bloggergram-flip
-                        {
-                            background-image: linear-gradient(to right, #6fc3f7 0%, #c2fdff 100%);
-                        }
-                        #trading-flip
-                        {
-                            background-image: linear-gradient(to right, #fc210d 0%, #f7ce38 100%);
-                        }
-                        #futureworld-flip
-                        {
-                            background-image: linear-gradient(to right, #0a8270 0%, #7cff6b 100%);
-                        }
-                        #wiki-flip
-                        {
-                            background-image: linear-gradient(to right, #112d60 0%, #b6c0c5 100%);
-                        }
-                        
                     }
                 }
 
@@ -576,12 +565,12 @@ body
     {
         padding: 0 20px;
         text-align: center;
-        background-image: url("../img/sakura2.jpg");
+        // background-image: url("../img/sakura2.jpg");
         background-size: cover;
         background-position: center center;
         height: 85vh;
-        border-top: 10px solid $pink;
-        border-bottom: 10px solid $pink;
+        // border-top: 10px solid $theme_color;
+        // border-bottom: 10px solid $theme_color;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -614,7 +603,7 @@ body
             button
             {
                 padding: 0.3em;
-                background-color: $pink;
+                // background-color: $theme_color;
                 border-radius: 5px;
                 &:active
                 {
@@ -682,7 +671,7 @@ body
                     &::after
                     {
                         content:" | ";
-                        color: $pink;
+                        // color: $theme_color;
                         text-shadow: inherit;
                         font-size: inherit;
                     }
@@ -734,7 +723,7 @@ body
         border-top: 1px solid #e1e1e1;
         .btn
         {
-            background-color: $pink;
+            // background-color: $theme_color;
             color: rgba(0,0,0,0.5);
             &:hover
             {
@@ -788,7 +777,7 @@ body
   #arrow-link {
     position: absolute;
     bottom: 2px;
-    left: 49%;
+    left: calc((100% - 62px) / 2);
     display: inline-block;
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -858,3 +847,59 @@ body
     }
   }
 // arrow ends
+
+// Waves animation
+
+#the_waves
+{
+    z-index: -1;
+    width: 120%;
+    .waves 
+    {
+        position:relative;
+        width: 100%;
+        height:15vh;
+        margin-bottom:-16px; /*Fix for safari gap*/
+        min-height:100px;
+        max-height:150px;
+    }
+    .parallax > use 
+    {
+        animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+    }
+    .parallax > use:nth-child(1) 
+    {
+        animation-delay: -2s;
+        animation-duration: 7s;
+    }
+    .parallax > use:nth-child(2) 
+    {
+        animation-delay: -3s;
+        animation-duration: 10s;
+    }
+    .parallax > use:nth-child(3) 
+    {
+        animation-delay: -4s;
+        animation-duration: 13s;
+    }
+    .parallax > use:nth-child(4) 
+    {
+        animation-delay: -5s;
+        animation-duration: 20s;
+    }
+}
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+  }
