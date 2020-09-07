@@ -16,7 +16,7 @@ $( document ).ready(function() {
             var newlink = document.createElement("link");
             newlink.setAttribute("rel", "stylesheet");
             newlink.setAttribute("type", "text/css");
-            newlink.setAttribute("href", `/css/${link.dataset.page}.css`);
+            newlink.setAttribute("href", `css/${link.dataset.page}.css`);
             
             // adding/removing leafs
             if(link.dataset.page == "ocean")
