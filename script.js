@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    location.replace("http://ymmy1.github.io/")
     var offSet = 1700
     setTimeout(function(){ navBarAnimate()}, offSet + 900);
     setTimeout(function(){ frontEndTitle();}, offSet + 500);
